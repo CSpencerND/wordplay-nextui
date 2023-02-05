@@ -1,4 +1,4 @@
-import { ReactNode } from "react"
+import { ReactNode, useRef, MutableRefObject } from "react"
 import Header from "./Header/Header"
 
 import { Inter } from "@next/font/google"
@@ -9,9 +9,11 @@ interface Children {
 }
 
 export default function Layout({ children }: Children) {
+    const LayoutRef: MutableRefObject<HTMLElement | null> = useRef(null)
+
     return (
-        <div className={inter.className}>
-            <Header />
+        <div className={inter.className} style={{ maxWidth: "100%", boxSizing: "border-box" }}>
+            <Header LayoutRef={LayoutRef} />
             {children}
             {/* <Footer /> */}
         </div>

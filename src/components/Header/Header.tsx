@@ -1,3 +1,4 @@
+import { MutableRefObject } from "react"
 import { Button, Navbar, Link, Text } from "@nextui-org/react"
 import Image from "next/image"
 import logo from "@/assets/logo/wp-logo.webp"
@@ -9,6 +10,10 @@ type PageLinkData = {
     pathName: string
 }
 
+type HeaderProps = {
+    LayoutRef: MutableRefObject<HTMLElement | null>
+}
+
 const collapseItems: PageLinkData[] = [
     { title: "Collections Directory", pathName: "collections" },
     { title: "Staff Picks", pathName: "collections/staff-picks" },
@@ -18,15 +23,19 @@ const collapseItems: PageLinkData[] = [
     { title: "Creative Minds", pathName: "collections/creative-minds" },
 ]
 
-export default function Header() {
+export default function Header({ LayoutRef }: HeaderProps) {
     return (
         <Navbar
-            variant="sticky"
-            containerCss={{ backgroundColor: "hsla(220, 20%, 20%, 1)" }}
-            css={{ backgroundColor: "hsla(220, 16%, 20%, 1)" }}
+            variant="floating"
+            isBordered
+            maxWidth="fluid"
+            parentRef={LayoutRef}
+            // css={{background: "transparent"}}
+            // containerCss={{background: "$backgroundAlpha", backdropFilter: "blur(16px)" }}
+            // disableBlur
         >
             <Navbar.Content>
-                <Navbar.Toggle aria-label="toggle navigation" css={{ paddingRight: 0 }}>
+                <Navbar.Toggle showIn="lg" aria-label="toggle navigation" css={{ paddingRight: 0 }}>
                     <Burger size={28} rounded distance="lg" label="Show Menu" />
                 </Navbar.Toggle>
                 <Navbar.Brand>

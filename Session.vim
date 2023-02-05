@@ -14,13 +14,11 @@ else
   set shortmess=aoO
 endif
 badd +25 src/pages/_app.tsx
-badd +27 src/components/Header/Header.tsx
-badd +1 src/pages/index.tsx
-badd +52 tailwind.config.cjs
+badd +36 src/components/Header/Header.tsx
 argglobal
 %argdel
 $argadd src/pages/_app.tsx
-edit src/components/Header/Header.tsx
+edit src/pages/_app.tsx
 wincmd t
 let s:save_winminheight = &winminheight
 let s:save_winminwidth = &winminwidth
@@ -29,7 +27,7 @@ set winheight=1
 set winminwidth=0
 set winwidth=1
 argglobal
-balt src/pages/_app.tsx
+balt src/components/Header/Header.tsx
 setlocal fdm=manual
 setlocal fde=
 setlocal fmr={{{,}}}
@@ -40,12 +38,12 @@ setlocal fdn=20
 setlocal fen
 silent! normal! zE
 let &fdl = &fdl
-let s:l = 27 - ((26 * winheight(0) + 27) / 55)
+let s:l = 25 - ((24 * winheight(0) + 27) / 55)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 27
-normal! 09|
+keepjumps 25
+normal! 046|
 tabnext 1
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0 && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
   silent exe 'bwipe ' . s:wipebuf
