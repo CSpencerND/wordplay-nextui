@@ -13,12 +13,13 @@ if &shortmess =~ 'A'
 else
   set shortmess=aoO
 endif
-badd +25 src/pages/_app.tsx
-badd +36 src/components/Header/Header.tsx
+badd +26 src/pages/_app.tsx
+badd +83 src/components/Header/Header.tsx
+badd +9 src/pages/index.tsx
 argglobal
 %argdel
 $argadd src/pages/_app.tsx
-edit src/pages/_app.tsx
+edit src/components/Header/Header.tsx
 wincmd t
 let s:save_winminheight = &winminheight
 let s:save_winminwidth = &winminwidth
@@ -27,7 +28,7 @@ set winheight=1
 set winminwidth=0
 set winwidth=1
 argglobal
-balt src/components/Header/Header.tsx
+balt src/pages/index.tsx
 setlocal fdm=manual
 setlocal fde=
 setlocal fmr={{{,}}}
@@ -38,12 +39,17 @@ setlocal fdn=20
 setlocal fen
 silent! normal! zE
 let &fdl = &fdl
-let s:l = 25 - ((24 * winheight(0) + 27) / 55)
+let s:l = 83 - ((40 * winheight(0) + 27) / 55)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 25
-normal! 046|
+keepjumps 83
+let s:c = 37 - ((10 * winwidth(0) + 83) / 167)
+if s:c > 0
+  exe 'normal! ' . s:c . '|zs' . 37 . '|'
+else
+  normal! 037|
+endif
 tabnext 1
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0 && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
   silent exe 'bwipe ' . s:wipebuf

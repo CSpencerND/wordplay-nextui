@@ -1,5 +1,6 @@
 import { ReactNode, useRef, MutableRefObject } from "react"
 import Header from "./Header/Header"
+import Image from "next/image"
 
 import { Inter } from "@next/font/google"
 const inter = Inter({ subsets: ["latin"] })
