@@ -1,4 +1,4 @@
-import { Container, Card, Col, Text } from "@nextui-org/react"
+import { Container, Card, Text } from "@nextui-org/react"
 import { type NextPage } from "next"
 import Head from "next/head"
 import Link from "next/link"
@@ -24,42 +24,44 @@ const Home: NextPage = () => {
     )
 }
 
-export default Home
-
-const Hero = () => (
-    <Card css={{ aspectRatio: "16 / 9", maxHeight: "100dvh", position: "relative" }}>
-        <Card.Header
-            css={{
-                position: "absolute",
-                zIndex: 1,
-                top: "50%",
-                left: "50%",
-                transform: "translate(-50%, -50%)",
-            }}
-        >
-            <Text
-                h1
-                weight="normal"
-                color="white"
-                // transform="uppercase"
+const Hero = (): JSX.Element => {
+    return (
+        <Card css={{ aspectRatio: "16 / 9", maxHeight: "100dvh", position: "relative" }}>
+            <Card.Header
                 css={{
-                    margin: "auto",
-                    textShadow: "1px 1px 48px black",
-                    fontSize: "clamp(2.57rem, 0.78rem + 8.95vw, 7.15rem)",
+                    position: "absolute",
+                    zIndex: 1,
+                    top: "50%",
+                    left: "50%",
+                    transform: "translate(-50%, -50%)",
                 }}
-                className={comforter.className}
             >
-                We Play With Words
-            </Text>
-        </Card.Header>
-        <Card.Image
-            src={hero.src}
-            alt="We Play With Words"
-            width={hero.width}
-            height={hero.height}
-            placeholder={hero.blurDataURL}
-            objectFit="cover"
-            css={{ opacity: "60%" }}
-        />
-    </Card>
-)
+                <Text
+                    h1
+                    weight="normal"
+                    color="white"
+                    // transform="uppercase"
+                    css={{
+                        margin: "auto",
+                        textShadow: "1px 1px 48px black",
+                        fontSize: "clamp(2.57rem, 0.78rem + 8.95vw, 7.15rem)",
+                    }}
+                    className={comforter.className}
+                >
+                    We Play With Words
+                </Text>
+            </Card.Header>
+            <Card.Image
+                src={hero.src}
+                alt="We Play With Words"
+                width={hero.width}
+                height={hero.height}
+                placeholder={hero.blurDataURL}
+                objectFit="cover"
+                css={{ opacity: "60%" }}
+            />
+        </Card>
+    )
+}
+
+export default Home

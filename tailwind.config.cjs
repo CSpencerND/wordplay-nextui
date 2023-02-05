@@ -38,15 +38,15 @@ module.exports = {
         },
     },
 
-    plugins: [require("daisyui") /*  require("@tailwindcss/typography") */],
-    daisyui: {
-        styled: false,
-        themes: false,
-        base: true,
-        utils: true,
-        logs: false,
-        rtl: false,
-        prefix: "",
-        darkTheme: "dark",
-    },
+    // plugins: [require("daisyui") /*  require("@tailwindcss/typography") */],
+    // daisyui: {
+    //     styled: false,
+    //     themes: false,
+    //     base: true,
+    //     utils: true,
+    //     logs: false,
+    //     rtl: false,
+    //     prefix: "",
+    //     darkTheme: "dark",
+    // },
 }

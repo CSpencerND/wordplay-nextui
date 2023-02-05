@@ -4,13 +4,25 @@ import Layout from "@/components/Layout"
 
 // import "@/styles/globals.css"
 
+const MyApp: AppType = ({ Component, pageProps }) => {
+    return (
+        <NextUIProvider theme={theme}>
+            <Layout>
+                <Component {...pageProps} />
+            </Layout>
+        </NextUIProvider>
+    )
+}
+
+export default MyApp
+
 const theme = createTheme({
     type: "dark",
     theme: {
         colors: {
             background:             "hsla(220, 20%, 20%, 1)",
-            backgroundAlpha:        "hsla(220, 20%, 20%, 0.6)",
-            foreground:             "hsla(220, 12%, 80%, 1)",
+            backgroundAlpha:        "hsla(220, 16%, 20%, 0.6)",
+            foreground:             "hsla(220, 12%, 90%, 1)",
             backgroundContrast:     "hsla(220, 20%, 24%, 1)",
             primaryLight:            "var(--nextui-colors-purple50)",
             primaryLightHover:       "var(--nextui-colors-purple100)",
@@ -50,17 +62,3 @@ const theme = createTheme({
         },
     },
 })
-
-// console.log(JSON.stringify(theme.colors, null, 2))
-
-const MyApp: AppType = ({ Component, pageProps }) => {
-    return (
-        <NextUIProvider theme={theme}>
-            <Layout>
-                <Component {...pageProps} />
-            </Layout>
-        </NextUIProvider>
-    )
-}
-
-export default MyApp
