@@ -80,7 +80,7 @@ export default function Header({ LayoutRef }: HeaderProps) {
                     position: "absolute",
                     top: 0,
                     right: 0,
-                    transform: "translate(50%, -75%) rotate(7.5deg)",
+                    transform: "translate(50%, -87.625%) rotate(7.5deg)",
                     zIndex: -1,
                     height: 304,
                     width: "100%",
