@@ -14,7 +14,7 @@ else
   set shortmess=aoO
 endif
 badd +26 src/pages/_app.tsx
-badd +83 src/components/Header/Header.tsx
+badd +78 src/components/Header/Header.tsx
 badd +9 src/pages/index.tsx
 argglobal
 %argdel
@@ -39,16 +39,16 @@ setlocal fdn=20
 setlocal fen
 silent! normal! zE
 let &fdl = &fdl
-let s:l = 83 - ((40 * winheight(0) + 27) / 55)
+let s:l = 78 - ((23 * winheight(0) + 27) / 55)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 83
-let s:c = 37 - ((10 * winwidth(0) + 83) / 167)
+keepjumps 78
+let s:c = 84 - ((40 * winwidth(0) + 83) / 167)
 if s:c > 0
-  exe 'normal! ' . s:c . '|zs' . 37 . '|'
+  exe 'normal! ' . s:c . '|zs' . 84 . '|'
 else
-  normal! 037|
+  normal! 084|
 endif
 tabnext 1
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0 && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'

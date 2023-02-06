@@ -4,6 +4,7 @@ import Image from "next/image"
 import logo from "@/assets/logo/wp-logo.webp"
 import { Login, Buy } from "react-iconly"
 import { Spiral as Burger } from "hamburger-react"
+import { Backdrop } from "@nextui-org/react"
 
 type PageLinkData = {
     title: string
@@ -67,34 +68,27 @@ export default function Header({ LayoutRef }: HeaderProps) {
                     </Navbar.CollapseItem>
                 ))}
             </Navbar.Collapse>
-            <div
+
+            <Backdrop
                 aria-hidden
-                style={{
-                    // background:
-                    //     "radial-gradient(circle, rgba(6,183,219,0.6012605725884104) 25%, rgba(255,78,205,0.6012605725884104) 50%, rgba(0,114,245,0.5956583316920518) 75%)",
-
-                    // background:
-                    //     "radial-gradient(circle, rgba(6, 183 ,219 ,0.8) 0%, rgba(255 ,78 ,205 ,0.8) 100%)",
-
-                    // background:
-                    //     "radial-gradient(circle, rgba(31,178,165,0.6) 0%, rgba(102,26,230,0.5984594521402311) 50%, rgba(217,38,170,0.6) 100%)",
-
+                blur
+                visible
+                css={{
                     background:
-                        "linear-gradient(90deg, rgba(31,178,165,0.6) 0%, rgba(102,26,230,0.5984594521402311) 50%, rgba(217,38,170,0.6) 100%)",
+                        "linear-gradient(112deg, #d926aa 0%, #661ae6 25%, #0072F5 75%)",
 
                     position: "absolute",
                     top: 0,
                     right: 0,
-                    height: 250,
-                    width: 350,
-                    opacity: 0.6,
+                    transform: "translate(50%, -75%) rotate(7.5deg)",
                     zIndex: -1,
-                    transform: "translate(50%, -50%)",
-                    borderRadius: "100%",
+                    height: 304,
+                    width: "100%",
+                    opacity: 0.6,
                     filter: "blur(32px)",
                     mixBlendMode: "hue",
                 }}
-            ></div>
+            />
         </Navbar>
     )
 }
