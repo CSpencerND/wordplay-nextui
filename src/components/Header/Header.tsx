@@ -86,7 +86,7 @@ export default function Header({ LayoutRef }: HeaderProps) {
                     width: "100%",
                     opacity: 0.6,
                     filter: "blur(32px)",
-                    mixBlendMode: "hue",
+                    mixBlendMode: "overlay",
                 }}
             />
         </Navbar>
