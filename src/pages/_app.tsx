@@ -2,7 +2,7 @@ import { type AppType } from "next/dist/shared/lib/utils"
 import { NextUIProvider, createTheme } from "@nextui-org/react"
 import Layout from "@/components/Layout"
 
-// import "@/styles/globals.css"
+import "@/styles/globals.css"
 
 const MyApp: AppType = ({ Component, pageProps }) => {
     return (
@@ -20,9 +20,6 @@ const theme = createTheme({
     type: "dark",
     theme: {
         colors: {
-            // background:             "#15181e",
-            // backgroundAlpha:        "#15181a88",
-            // backgroundContrast:     "#15181e",
             background:             "rgb(20, 20, 24)",
             backgroundAlpha:        "rgba(20, 20, 20, 0.6)",
             backgroundContrast:     "rgb(28, 28, 32)",

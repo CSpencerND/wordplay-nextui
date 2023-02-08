@@ -26,6 +26,26 @@ const collapseItems: PageLinkData[] = [
 
 export default function Header({ LayoutRef }: HeaderProps) {
     return (
+        <>
+            <div
+                aria-hidden
+                // blur
+                // visible
+                style={{
+                    background:
+                        "linear-gradient(112deg, #d926aa 0%, #661ae6 20%, #0072F5 75%)",
+
+                    position: "absolute",
+                    inset: 0,
+                    transform: "translate(62.5%, -62.5%) rotate(7.5deg)",
+                    height: 300,
+                    zIndex: 201,
+                    pointerEvents: 'none',
+                    opacity: 0.333,
+                    filter: "blur(32px)",
+                    mixBlendMode: "plus-lighter",
+                }}
+            />
         <Navbar
             variant="floating"
             isBordered
@@ -69,26 +89,7 @@ export default function Header({ LayoutRef }: HeaderProps) {
                 ))}
             </Navbar.Collapse>
 
-            <Backdrop
-                aria-hidden
-                blur
-                visible
-                css={{
-                    background:
-                        "linear-gradient(112deg, #d926aa 0%, #661ae6 25%, #0072F5 75%)",
-
-                    position: "absolute",
-                    top: 0,
-                    right: 0,
-                    transform: "translate(50%, -87.625%) rotate(7.5deg)",
-                    zIndex: -1,
-                    height: 304,
-                    width: "100%",
-                    opacity: 0.6,
-                    filter: "blur(32px)",
-                    mixBlendMode: "overlay",
-                }}
-            />
         </Navbar>
+        </>
     )
 }
