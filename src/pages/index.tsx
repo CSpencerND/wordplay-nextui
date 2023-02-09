@@ -1,11 +1,11 @@
-/** next */
+/** types */
 import { type NextPage } from "next"
-import Head from "next/head"
-import Image from "next/image"
-import Link from "next/link"
 
 /** components */
-import { Container, Card, Text, Spacer, Grid, Image as ImageNextUI } from "@nextui-org/react"
+import Head from "next/head"
+import NextImage from "next/image"
+import Link from "next/link"
+import { Container, Card, Text, Spacer, Image } from "@nextui-org/react"
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry"
 import Featured from "@/components/Featured/Featured"
 
@@ -75,7 +75,7 @@ const Hero = (): JSX.Element => {
                     We Play With Words
                 </Text>
             </Card.Header>
-            <Image
+            <NextImage
                 src={hero.src}
                 alt="We Play With Words"
                 width={hero.width}
@@ -92,7 +92,7 @@ const Hero = (): JSX.Element => {
 const Gallery = (): JSX.Element => {
     const galleryImages = galleryImageData.map(({ src, alt }, i) => {
         return (
-            <ImageNextUI
+            <Image
                 src={src.src}
                 alt={alt}
                 key={i}

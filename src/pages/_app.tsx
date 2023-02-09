@@ -20,9 +20,10 @@ const theme = createTheme({
     type: "dark",
     theme: {
         colors: {
-            background:             "rgb(20, 20, 24)",
-            backgroundAlpha:        "rgba(20, 20, 20, 0.6)",
-            backgroundContrast:     "rgb(28, 28, 32)",
+            background:                 "hsl(240,16%,8%)",
+            backgroundAlpha:            "hsla(240,16%,8%,0.6)",
+            backgroundContrast:         "hsl(240,16%,16%)",
+            backgroundContrastAlpha:    "hsla(240,16%,16%,0.6)",
             primaryLightHover:       "var(--nextui-colors-purple100)",
             primaryLightActive:      "var(--nextui-colors-purple200)",
             primaryLightContrast:    "var(--nextui-colors-purple600)",
