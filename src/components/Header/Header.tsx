@@ -28,26 +28,10 @@ type HeaderProps = {
 export default function Header({ LayoutRef }: HeaderProps) {
     return (
         <>
-            <div
-                aria-hidden
-                style={{
-                    background: "linear-gradient(112deg, #d926aa 0%, #661ae6 20%, #0072F5 75%)",
-
-                    position: "absolute",
-                    inset: 0,
-                    transform: "translate(62.5%, -62.5%) rotate(7.5deg)",
-                    height: 300,
-                    zIndex: 201,
-                    pointerEvents: "none",
-                    opacity: 0.333,
-                    filter: "blur(32px)",
-                    mixBlendMode: "plus-lighter",
-                }}
-            />
             <Navbar
                 variant="sticky"
                 isBordered
-                // maxWidth="fluid"
+                maxWidth="fluid"
                 parentRef={LayoutRef}
                 // css={{background: "transparent"}}
                 // containerCss={{background: "$backgroundAlpha", backdropFilter: "blur(16px)" }}

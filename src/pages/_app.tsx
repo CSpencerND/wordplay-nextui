@@ -1,10 +1,17 @@
 import { type AppType } from "next/dist/shared/lib/utils"
-import { NextUIProvider, createTheme } from "@nextui-org/react"
+import { NextUIProvider, createTheme, globalCss } from "@nextui-org/react"
 import Layout from "@/components/Layout"
 
 import "@/styles/globals.css"
 
+const globalCSS = globalCss({
+    body: {
+        backgroundColor: "hsla(240,16%,16%,0.6)"
+    }
+})
+
 const MyApp: AppType = ({ Component, pageProps }) => {
+    globalCSS()
     return (
         <NextUIProvider theme={theme}>
             <Layout>
@@ -20,9 +27,9 @@ const theme = createTheme({
     type: "dark",
     theme: {
         colors: {
-            background:                 "hsl(240,16%,8%)",
+            background:                 "hsla(240,16%,8%,1)",
             backgroundAlpha:            "hsla(240,16%,8%,0.6)",
-            backgroundContrast:         "hsl(240,16%,16%)",
+            backgroundContrast:         "hsl(240,16%,16%,1)",
             backgroundContrastAlpha:    "hsla(240,16%,16%,0.6)",
             primaryLightHover:       "var(--nextui-colors-purple100)",
             primaryLightActive:      "var(--nextui-colors-purple200)",
