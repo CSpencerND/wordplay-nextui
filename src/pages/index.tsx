@@ -41,6 +41,8 @@ const Home: NextPage = () => {
                 <Spacer y={2} />
                 <Featured />
                 <Spacer y={2} />
+                <About />
+                <Spacer y={2} />
                 <Gallery />
                 <Spacer y={2} />
             </Container>
@@ -76,15 +78,38 @@ const Hero = (): JSX.Element => {
                 </Text>
             </Card.Header>
             <NextImage
-                src={hero.src}
+                src={hero}
                 alt="We Play With Words"
-                width={hero.width}
-                height={hero.height}
                 placeholder="blur"
-                blurDataURL={hero.blurDataURL}
                 priority
                 style={{ opacity: "75%", objectPosition: "top" }}
             />
+        </Card>
+    )
+}
+
+const About = (): JSX.Element => {
+    return (
+        <Card  as="section" css={{ p: "$md", bgBlur: "$backgroundContrastAlpha" }}>
+            <Card.Body as="article">
+                <Text h3>Why we love what we do</Text>
+                <Spacer y={.5}></Spacer>
+                <Text>
+                    When we think about WORDPLAY4LYFE, what comes to mind is Artistic Expression
+                    - being able to express yourself freely and not be judged. We use our
+                    Imagination because the fact that you can come up with different ideas for
+                    something that's yours is just amazing. The fact that you can daydream about
+                    those different ideas and bring them to life is really exciting, which is an
+                    excellent way to share my Creativeness with the rest of the world. We want
+                    WORDPLAY4LYFE to represent Culture in all walks of life because without
+                    culture there is no WORDPLAY4LYFE.
+                </Text>
+                <Spacer y={1}></Spacer>
+                <Text>
+                    Artistic Expression, Imagination, Creativeness and Culture represents our
+                    brand (AEICC)
+                </Text>
+            </Card.Body>
         </Card>
     )
 }
@@ -96,7 +121,7 @@ const Gallery = (): JSX.Element => {
                 src={src.src}
                 alt={alt}
                 key={i}
-                css={{borderRadius: "$md"}}
+                css={{ borderRadius: "$md" }}
                 // style={{ width: "auto", height: "auto", borderRadius: 12 }}
             />
         )
