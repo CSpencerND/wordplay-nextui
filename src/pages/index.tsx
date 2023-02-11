@@ -4,7 +4,7 @@ import { type NextPage } from "next"
 /** components */
 import Head from "next/head"
 import NextImage from "next/image"
-import Link from "next/link"
+// import Link from "next/link"
 import { Container, Card, Text, Spacer, Image } from "@nextui-org/react"
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry"
 import Featured from "@/components/Featured/Featured"
@@ -98,7 +98,7 @@ const About = (): JSX.Element => {
                     When we think about WORDPLAY4LYFE, what comes to mind is Artistic Expression
                     - being able to express yourself freely and not be judged. We use our
                     Imagination because the fact that you can come up with different ideas for
-                    something that's yours is just amazing. The fact that you can daydream about
+                    something that&apos;s yours is just amazing. The fact that you can daydream about
                     those different ideas and bring them to life is really exciting, which is an
                     excellent way to share my Creativeness with the rest of the world. We want
                     WORDPLAY4LYFE to represent Culture in all walks of life because without

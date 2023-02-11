@@ -8,9 +8,9 @@ type FilenameArray = {
 }
 
 const handler: NextApiHandler = async (req: NextApiRequest, res: NextApiResponse<FilenameArray>) => {
-    const sendError = (err: NodeJS.ErrnoException | null) => {
-        console.log(err)
-    }
+    // const sendError = (err: NodeJS.ErrnoException | null) => {
+    //     console.log(err)
+    // }
     const imageDirectory = path.join(process.cwd(), "/public/mindset")
     const imageFilenames = await fs.readdir(imageDirectory)
     console.log(imageFilenames)
