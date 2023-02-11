@@ -14,8 +14,8 @@ import hero from "@/assets/hero.webp"
 import galleryImageData from "@/assets/gallery"
 
 /** font */
-import { Comforter } from "@next/font/google"
-const comforter = Comforter({ weight: "400", subsets: ["latin"] })
+import localFont from '@next/font/local'
+const graffiti = localFont({src: "../assets/font/don_graffiti/DonGraffiti.otf"})
 
 // export async function getStaticProps() {
 //     const response = await fetch("http://localhost:3000/api/featured")
@@ -72,7 +72,7 @@ const Hero = (): JSX.Element => {
                         textShadow: "1px 2px 2px black, -1px -2px 2px black",
                         fontSize: "clamp(2.57rem, 0.78rem + 8.95vw, 7.15rem)",
                     }}
-                    className={comforter.className}
+                    className={graffiti.className}
                 >
                     We Play With Words
                 </Text>
@@ -90,18 +90,18 @@ const Hero = (): JSX.Element => {
 
 const About = (): JSX.Element => {
     return (
-        <Card  as="section" css={{ p: "$md", bgBlur: "$backgroundContrastAlpha" }}>
+        <Card as="section" css={{ p: "$md", bgBlur: "$backgroundContrastAlpha", position: "relative" }}>
             <Card.Body as="article">
                 <Text h3>Why we love what we do</Text>
-                <Spacer y={.5}></Spacer>
+                <Spacer y={0.5}></Spacer>
                 <Text>
                     When we think about WORDPLAY4LYFE, what comes to mind is Artistic Expression
                     - being able to express yourself freely and not be judged. We use our
                     Imagination because the fact that you can come up with different ideas for
-                    something that&apos;s yours is just amazing. The fact that you can daydream about
-                    those different ideas and bring them to life is really exciting, which is an
-                    excellent way to share my Creativeness with the rest of the world. We want
-                    WORDPLAY4LYFE to represent Culture in all walks of life because without
+                    something that&apos;s yours is just amazing. The fact that you can daydream
+                    about those different ideas and bring them to life is really exciting, which
+                    is an excellent way to share my Creativeness with the rest of the world. We
+                    want WORDPLAY4LYFE to represent Culture in all walks of life because without
                     culture there is no WORDPLAY4LYFE.
                 </Text>
                 <Spacer y={1}></Spacer>

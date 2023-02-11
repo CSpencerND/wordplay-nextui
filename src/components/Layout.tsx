@@ -4,7 +4,7 @@ import { Children } from "types"
 
 /** components */
 import Header from "./Header/Header"
-import { Image } from "@nextui-org/react"
+import { Image, Text } from "@nextui-org/react"
 
 /** hooks */
 import { useRef } from "react"
@@ -33,6 +33,7 @@ export default function Layout({ children }: Children) {
 
             {/** Background Effects*/}
             <Image
+                aria-hidden="true"
                 src="/effects/gradient-right-dark.svg"
                 alt="gradient violet background"
                 css={{
@@ -46,6 +47,20 @@ export default function Layout({ children }: Children) {
                 }}
             />
             <Image
+                aria-hidden="true"
+                src="/effects/bg-wordplay.svg"
+                css={{
+                    position: "fixed",
+                    top: "0%",
+                    mixBlendMode: "screen",
+                    filter: "blur(16px) saturate(1.8)",
+                    opacity: 0.6,
+                    zIndex: -1,
+                    overflow: "hidden",
+                }}
+            />
+            <Image
+                aria-hidden="true"
                 src="/effects/gradient-left-dark.svg"
                 alt="gradient blue background"
                 css={{

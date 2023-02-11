@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="579.09833mm"
+   height="172.55484mm"
+   viewBox="0 0 579.09833 172.55484"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   sodipodi:docname="bg-lifestyle.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="true"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.33165719"
+     inkscape:cx="2133.2268"
+     inkscape:cy="687.45684"
+     inkscape:window-width="2100"
+     inkscape:window-height="1037"
+     inkscape:window-x="1157"
+     inkscape:window-y="122"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient1327">
+      <stop
+         style="stop-color:#d926aa;stop-opacity:1;"
+         offset="0"
+         id="stop1323" />
+      <stop
+         style="stop-color:#661ae6;stop-opacity:1;"
+         offset="0.5"
+         id="stop1331" />
+      <stop
+         style="stop-color:#1fb2a5;stop-opacity:1"
+         offset="1"
+         id="stop1325" />
+    </linearGradient>
+    <rect
+       x="-9.0454845"
+       y="-6.030323"
+       width="3790.0581"
+       height="1887.4911"
+       id="rect236" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1327"
+       id="linearGradient1329"
+       x1="226.58722"
+       y1="408.76767"
+       x2="694.67218"
+       y2="32.224228"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0.14843463,-144.41788)">
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text234"
+       style="font-size:268.98px;font-family:Julee;-inkscape-font-specification:'Julee, Normal';white-space:pre;shape-inside:url(#rect236);display:inline;fill:#ffffff;stroke:#000000;stroke-width:1.19" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:198.139px;font-family:'Don Graffiti';-inkscape-font-specification:'Don Graffiti, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:url(#linearGradient1329);fill-opacity:1;stroke:#000000;stroke-width:0.876593"
+       x="4.9711885"
+       y="290.67297"
+       id="text242"><tspan
+         sodipodi:role="line"
+         id="tspan2395"
+         x="4.9711885"
+         y="290.67297"
+         style="fill:url(#linearGradient1329)">Lifestyle</tspan></text>
+  </g>
+</svg>

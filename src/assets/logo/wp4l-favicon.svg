@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="50mm"
+   height="50mm"
+   viewBox="0 0 50 50"
+   version="1.1"
+   id="svg173"
+   sodipodi:docname="wp4l-favicon.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview175"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="2.8151755"
+     inkscape:cx="185.77882"
+     inkscape:cy="42.270899"
+     inkscape:window-width="1451"
+     inkscape:window-height="927"
+     inkscape:window-x="1404"
+     inkscape:window-y="270"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer3" />
+  <defs
+     id="defs170">
+    <rect
+       x="-642.65033"
+       y="62.653759"
+       width="566.56714"
+       height="349.50204"
+       id="rect1077" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient906">
+      <stop
+         style="stop-color:#1fb2a6;stop-opacity:1;"
+         offset="0.08624434"
+         id="stop902" />
+      <stop
+         style="stop-color:#d926a9;stop-opacity:1;"
+         offset="0.87870681"
+         id="stop904" />
+    </linearGradient>
+    <inkscape:path-effect
+       effect="powerstroke"
+       id="path-effect6079"
+       is_visible="true"
+       lpeversion="1"
+       offset_points="1.0062284,0.68302195"
+       not_jump="true"
+       sort_points="true"
+       interpolator_type="CentripetalCatmullRom"
+       interpolator_beta="0.75"
+       start_linecap_type="round"
+       linejoin_type="spiro"
+       miter_limit="4"
+       scale_width="1"
+       end_linecap_type="round" />
+    <inkscape:path-effect
+       effect="simplify"
+       id="path-effect6077"
+       is_visible="true"
+       lpeversion="1"
+       steps="1"
+       threshold="0.0047745358"
+       smooth_angles="0"
+       helper_size="0"
+       simplify_individual_paths="false"
+       simplify_just_coalesce="false"
+       step="1" />
+    <rect
+       x="107.83704"
+       y="54.169334"
+       width="519.16376"
+       height="249.0237"
+       id="rect1263" />
+    <filter
+       id="mask-powermask-path-effect1174_inverse"
+       inkscape:label="filtermask-powermask-path-effect1174"
+       style="color-interpolation-filters:sRGB"
+       height="100"
+       width="100"
+       x="-50"
+       y="-50">
+      <feColorMatrix
+         id="mask-powermask-path-effect1174_primitive1"
+         values="1"
+         type="saturate"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         id="mask-powermask-path-effect1174_primitive2"
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0 "
+         in="fbSourceGraphic" />
+    </filter>
+    <filter
+       id="mask-powermask-path-effect1186_inverse"
+       inkscape:label="filtermask-powermask-path-effect1186"
+       style="color-interpolation-filters:sRGB"
+       height="100"
+       width="100"
+       x="-50"
+       y="-50">
+      <feColorMatrix
+         id="mask-powermask-path-effect1186_primitive1"
+         values="1"
+         type="saturate"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         id="mask-powermask-path-effect1186_primitive2"
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0 "
+         in="fbSourceGraphic" />
+    </filter>
+    <filter
+       id="filter1906"
+       inkscape:label="filtermask-powermask-path-effect1186"
+       style="color-interpolation-filters:sRGB"
+       height="100"
+       width="100"
+       x="-50"
+       y="-50">
+      <feColorMatrix
+         id="feColorMatrix1902"
+         values="1"
+         type="saturate"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         id="feColorMatrix1904"
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0 "
+         in="fbSourceGraphic" />
+    </filter>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath6698">
+      <path
+         id="path6700"
+         style="fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.264583"
+         d="m 96.36673,191.68391 v 29.87518 h 21.68653 c 0.3685,-0.13963 0.73765,-0.27716 1.10432,-0.41858 0.25511,-0.0933 1.18219,-0.43679 1.45366,-0.51728 0.25032,-0.0742 0.66846,-0.20863 1.0294,-0.19844 0.16406,0.005 0.31643,0.0395 0.43563,0.12299 0.26669,0.1868 0.44834,0.49816 0.54932,0.8077 0.0217,0.0665 0.0176,0.13471 0.003,0.20361 h 40.09213 v -29.87518 z" />
+    </clipPath>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient906"
+       id="linearGradient908"
+       x1="12.802048"
+       y1="185.47559"
+       x2="67.256508"
+       y2="56.579075"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.28027747,0,0,0.49123129,59.416461,70.25611)" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     style="display:inline"
+     transform="translate(-63.307943,-119.13575)">
+    <path
+       id="path394"
+       style="display:inline;opacity:1;mix-blend-mode:normal;fill:url(#linearGradient908);fill-opacity:1;stroke-width:0.101686"
+       d="m 103.38231,168.09627 c 0.60024,-0.0243 4.23265,-0.0375 7.23198,-2.41212 1.16003,-0.91839 1.85873,-3.76558 2.12174,-6.60109 0.85289,-9.19517 0.61072,-35.28917 0.18239,-36.91958 -0.34364,-1.30801 -1.18619,-3.02683 -3.32158,-3.02773 -2.02708,-6.9e-4 -6.21682,1.10245 -14.593496,2.68437 -17.681842,-1.90338 -26.758901,-2.29843 -26.758901,-2.29843 -1.609835,-0.12478 -2.333473,1.51601 -3.109949,4.11468 -3.673059,12.2927 -0.670742,41.34493 -0.670742,41.34493 0.497564,2.90487 2.196504,4.35788 4.035284,4.13149 l 3.440497,-0.27276 9.961488,-2.24362 9.948294,0.56447"
+       sodipodi:nodetypes="csssscccccccc" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Layer 2"
+     transform="translate(-63.307943,-119.13575)">
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text1261"
+       style="white-space:pre;shape-inside:url(#rect1263);display:inline;opacity:1;fill:#d926a9;fill-opacity:1" />
+    <path
+       id="rect1373"
+       style="display:inline;opacity:1;fill:#1f242d;fill-opacity:1;stroke-width:0.088194"
+       d="m 106.65725,163.85937 c 1.0861,0.005 1.96058,-2.31212 1.96058,-5.1841 v -29.63176 c 0,-2.87199 -0.87447,-5.18413 -1.96058,-5.18413 H 70.578401 c -1.086112,0 -1.960579,2.31214 -1.960579,5.18413 v 29.63176 c 0,2.87198 0.874467,5.18281 1.960579,5.1841"
+       sodipodi:nodetypes="cssssssc" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Text"
+     transform="translate(-63.307943,-119.13575)">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32.5904px;font-family:'Don Graffiti';-inkscape-font-specification:'Don Graffiti, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke:#000000;stroke-width:0.146871"
+       x="51.754261"
+       y="193.80733"
+       id="text2309"
+       transform="scale(1.3528563,0.73917679)"><tspan
+         sodipodi:role="line"
+         id="tspan2307"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32.5904px;font-family:'Don Graffiti';-inkscape-font-specification:'Don Graffiti, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.146871"
+         x="51.754261"
+         y="193.80733">WP</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32.4791px;font-family:'Don Graffiti';-inkscape-font-specification:'Don Graffiti, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke:#000000;stroke-width:0.138483"
+       x="49.127048"
+       y="226.35849"
+       id="text2313"
+       transform="scale(1.4147431,0.70684212)"><tspan
+         sodipodi:role="line"
+         id="tspan2311"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32.4791px;font-family:'Don Graffiti';-inkscape-font-specification:'Don Graffiti, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.138483"
+         x="49.127048"
+         y="226.35849">4L</tspan></text>
+  </g>
+</svg>

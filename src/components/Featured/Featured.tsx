@@ -10,7 +10,14 @@ export default function Featured() {
 
     return (
         <Card css={{ py: "$md", bgBlur: "$backgroundContrastAlpha" }}>
-            <Text h3 css={{ color: "$primary", textAlign: "center", py: "$sm" }}>
+            <Text
+                h3
+                css={{
+                    textGradient: "45deg, $purple600 25%, $pink600 100%",
+                    textAlign: "center",
+                    py: "$sm",
+                }}
+            >
                 Featured Items
             </Text>
             <AliceCarousel
@@ -49,7 +56,7 @@ export default function Featured() {
                             ml: "auto",
                             mr: "$xs",
                             bgColor: "$textLight",
-                            color: "$foreground"
+                            color: "$foreground",
                         }}
                         onPress={() => sliderRef?.current?.slidePrev() || null}
                     />
@@ -65,7 +72,7 @@ export default function Featured() {
                             mr: "auto",
                             ml: "$xs",
                             bgColor: "$textLight",
-                            color: "$foreground"
+                            color: "$foreground",
                         }}
                         onPress={() => sliderRef?.current?.slideNext() || null}
                     />

@@ -8,7 +8,8 @@ import { Button, Navbar, Link, Text } from "@nextui-org/react"
 import { Spiral as Burger } from "hamburger-react"
 import { Login, Buy } from "react-iconly"
 
-import logo from "@/assets/logo/wp-logo.webp"
+// import logo from "@/assets/logo/wp-logo.webp"
+import logo from "@/assets/logo/wp4l.svg"
 
 /**********************************************************************************************/
 
