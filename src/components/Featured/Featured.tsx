@@ -1,5 +1,5 @@
 import React, { useRef } from "react"
-import { Button, Card, Image, Spacer, Text } from "@nextui-org/react"
+import { Button, Card, Image, Text } from "@nextui-org/react"
 import AliceCarousel from "react-alice-carousel"
 import "react-alice-carousel/lib/alice-carousel.css"
 import { ChevronRight, ChevronLeft } from "react-iconly"
@@ -41,22 +41,32 @@ export default function Featured() {
                 renderPrevButton={() => (
                     <Button
                         flat
-                        color=""
                         icon={<ChevronLeft set="curved" />}
                         aria-controls="alice-carousel"
                         auto
-                        css={{ mt: "$lg", ml: "auto", mr: "$xs" }}
+                        css={{
+                            mt: "$lg",
+                            ml: "auto",
+                            mr: "$xs",
+                            bgColor: "$textLight",
+                            color: "$foreground"
+                        }}
                         onPress={() => sliderRef?.current?.slidePrev() || null}
                     />
                 )}
                 renderNextButton={() => (
                     <Button
                         flat
-                        color=""
                         icon={<ChevronRight set="curved" />}
                         aria-controls="alice-carousel"
                         auto
-                        css={{ mt: "$lg", mr: "auto", ml: "$xs" }}
+                        css={{
+                            mt: "$lg",
+                            mr: "auto",
+                            ml: "$xs",
+                            bgColor: "$textLight",
+                            color: "$foreground"
+                        }}
                         onPress={() => sliderRef?.current?.slideNext() || null}
                     />
                 )}
@@ -68,59 +78,64 @@ export default function Featured() {
 // const temp = "/assets/collections/mindset/say-less-[black].webp"
 
 const images = [
-        <Image
-            src={temp.src}
-            alt="temp"
-            autoResize
-            css={{
-                backgroundImage: "$grayscale",
-                borderRadius: "$lg",
-            }}
-        />
-        ,
-        <Image
-            src={temp.src}
-            alt="temp"
-            autoResize
-            css={{
-                backgroundImage: "$grayscale",
-                borderRadius: "$lg",
-            }}
-        />,
-        <Image
-            src={temp.src}
-            alt="temp"
-            autoResize
-            css={{
-                backgroundImage: "$grayscale",
-                borderRadius: "$lg",
-            }}
-        />,
-        <Image
-            src={temp.src}
-            alt="temp"
-            autoResize
-            css={{
-                backgroundImage: "$grayscale",
-                borderRadius: "$lg",
-            }}
-        />,
-        <Image
-            src={temp.src}
-            alt="temp"
-            autoResize
-            css={{
-                backgroundImage: "$grayscale",
-                borderRadius: "$lg",
-            }}
-        />,
-        <Image
-            src={temp.src}
-            alt="temp"
-            autoResize
-            css={{
-                backgroundImage: "$grayscale",
-                borderRadius: "$lg",
-            }}
-        />,
-        ]
+    <Image
+        src={temp.src}
+        alt="temp"
+        autoResize
+        css={{
+            backgroundImage: "$grayscale",
+            borderRadius: "$lg",
+        }}
+        key={1}
+    />,
+    <Image
+        src={temp.src}
+        alt="temp"
+        autoResize
+        css={{
+            backgroundImage: "$grayscale",
+            borderRadius: "$lg",
+        }}
+        key={2}
+    />,
+    <Image
+        src={temp.src}
+        alt="temp"
+        autoResize
+        css={{
+            backgroundImage: "$grayscale",
+            borderRadius: "$lg",
+        }}
+        key={3}
+    />,
+    <Image
+        src={temp.src}
+        alt="temp"
+        autoResize
+        css={{
+            backgroundImage: "$grayscale",
+            borderRadius: "$lg",
+        }}
+        key={4}
+    />,
+    <Image
+        src={temp.src}
+        alt="temp"
+        autoResize
+        css={{
+            backgroundImage: "$grayscale",
+            borderRadius: "$lg",
+        }}
+        key={5}
+    />,
+    <Image
+        src={temp.src}
+        alt="temp"
+        autoResize
+        css={{
+            backgroundImage: "$grayscale",
+            borderRadius: "$lg",
+        }}
+        key={6}
+    />,
+]
