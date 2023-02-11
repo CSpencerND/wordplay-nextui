@@ -1,11 +1,13 @@
 /** types */
-import { useRef } from "react"
-import { MutableRefObject } from "react"
+import type { MutableRefObject } from "react"
 import { Children } from "types"
 
 /** components */
 import Header from "./Header/Header"
 import { Image } from "@nextui-org/react"
+
+/** hooks */
+import { useRef } from "react"
 
 /** font */
 import { Inter } from "@next/font/google"
@@ -15,7 +17,16 @@ export default function Layout({ children }: Children) {
     const LayoutRef: MutableRefObject<HTMLElement | null> = useRef(null)
 
     return (
-        <div className={inter.className} style={{ maxWidth: "100%", boxSizing: "border-box" }}>
+        <div
+            className={inter.className}
+            style={{
+                maxWidth: "100%",
+                maxHeight: "100svh",
+                boxSizing: "border-box",
+                overflow: "scroll",
+                overscrollBehavior: "contain",
+            }}
+        >
             <Header LayoutRef={LayoutRef} />
             {children}
             {/* <Footer /> */}
@@ -30,6 +41,7 @@ export default function Layout({ children }: Children) {
                     right: "-40%",
                     mixBlendMode: "screen",
                     filter: "saturate(1.8)",
+                    opacity: 0.6,
                     zIndex: -1,
                 }}
             />
@@ -42,7 +54,9 @@ export default function Layout({ children }: Children) {
                     left: "-30%",
                     mixBlendMode: "screen",
                     filter: "saturate(1.8)",
-                    zIndex: -1
+                    opacity: 0.6,
+                    zIndex: -1,
+                    overflow: "hidden",
                 }}
             />
         </div>
