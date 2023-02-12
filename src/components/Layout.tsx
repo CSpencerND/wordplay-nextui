@@ -1,6 +1,6 @@
 /** types */
 import type { MutableRefObject } from "react"
-import { Children } from "types"
+import type { Children } from "types"
 
 /** components */
 import Header from "./Header/Header"
@@ -49,6 +49,7 @@ export default function Layout({ children }: Children) {
             <Image
                 aria-hidden="true"
                 src="/effects/bg-wordplay.svg"
+                alt="wordplay background effect"
                 css={{
                     position: "fixed",
                     top: "0%",

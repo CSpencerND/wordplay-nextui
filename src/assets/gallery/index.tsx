@@ -1,4 +1,4 @@
-import { StaticImageData } from "next/image"
+import type { StaticImageData } from "next/image"
 
 import blazin from "./blazin.webp"
 import city from "./city.webp"
