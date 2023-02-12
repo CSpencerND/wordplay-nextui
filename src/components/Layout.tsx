@@ -17,13 +17,32 @@ export default function Layout({ children }: Children) {
     const LayoutRef: MutableRefObject<HTMLElement | null> = useRef(null)
 
     return (
-        <>
-            {/** Background Effects*/}
+        <div
+            className={inter.className}
+            style={{
+                height: "100vh",
+                overflowY: "auto",
+                overflowX: "hidden",
+                overscrollBehavior: "none"
+            }}
+        >
+            <BGFX />
+            <Header LayoutRef={LayoutRef} />
+            {children}
+            {/* <Footer /> */}
+        </div>
+    )
+}
+
+const BGFX = () => {
+    return (
+        <div aria-hidden="true">
             <div
-                aria-hidden="true"
                 style={{
                     position: "fixed",
                     top: 0,
+                    width: "100vw",
+                    height: "100vw",
                     willChange: "transform",
                 }}
             >
@@ -34,14 +53,13 @@ export default function Layout({ children }: Children) {
                         position: "relative",
                         mt: "-45%",
                         ml: "45%",
-                        filter: "blur(16px) saturate(1.8)",
+                        filter: "blur(16px)",
                         opacity: 0.6,
                     }}
                 />
             </div>
 
             <div
-                aria-hidden="true"
                 style={{
                     position: "fixed",
                     bottom: 0,
@@ -56,27 +74,11 @@ export default function Layout({ children }: Children) {
                         position: "relative",
                         mb: "-35%",
                         ml: "-20%",
-                        filter: "blur(16px) saturate(1.8)",
-                        opacity: 0.8,
+                        filter: "blur(16px)",
+                        opacity: 0.6,
                     }}
                 />
             </div>
-
-            <div
-                className={inter.className}
-                style={
-                    {
-                        // maxWidth: "100%",
-                        // boxSizing: "border-box",
-                        // overflow: "scroll",
-                        // overscrollBehavior: "contain",
-                    }
-                }
-            >
-                <Header LayoutRef={LayoutRef} />
-                {children}
-                {/* <Footer /> */}
-            </div>
-        </>
+        </div>
     )
 }
