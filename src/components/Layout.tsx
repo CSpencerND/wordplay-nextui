@@ -4,7 +4,7 @@ import { Children } from "types"
 
 /** components */
 import Header from "./Header/Header"
-import { Image, Text } from "@nextui-org/react"
+import { Image } from "@nextui-org/react"
 
 /** hooks */
 import { useRef } from "react"
@@ -53,7 +53,7 @@ export default function Layout({ children }: Children) {
                     position: "fixed",
                     top: "0%",
                     mixBlendMode: "screen",
-                    filter: "blur(16px) saturate(1.8)",
+                    filter: "blur(8px) saturate(1.8)",
                     opacity: 0.6,
                     zIndex: -1,
                     overflow: "hidden",

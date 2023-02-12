@@ -36,7 +36,7 @@ const theme = createTheme({
             // backgroundAlpha:            "hsla(240,16%,8%,0.6)",
             // backgroundContrast:         "hsla(240,16%,12%,1)",
             // backgroundContrastAlpha:    "hsla(240,12%,12%,0.3)",
-            backgroundContrastAlpha: "hsla(210,8%,9%,0.6)",
+            backgroundContrastAlpha: "hsla(240,12%,20%,0.6)",
             grayscale: "linear-gradient(to top, hsla(240,16%,25%,0.8), hsla(240,16%,100%,0.8))",
             primaryLight: "var(--nextui-colors-purple50)",
             primaryLightHover: "var(--nextui-colors-purple100)",

@@ -2,6 +2,6 @@
 /* @tailwind components; */
 /* @tailwind utilities; */
 
-/* li.alice-carousel__stage-item { */
-/*     padding-inline: 0.5rem !important; */
-/* } */
+html {
+    font-size: clamp(1rem, calc(0.98rem + 0.41vw), 1.50rem);
+}

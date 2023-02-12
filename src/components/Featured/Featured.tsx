@@ -1,8 +1,12 @@
 import React, { useRef } from "react"
+
+/** components */
 import { Button, Card, Image, Text } from "@nextui-org/react"
 import AliceCarousel from "react-alice-carousel"
 import "react-alice-carousel/lib/alice-carousel.css"
 import { ChevronRight, ChevronLeft } from "react-iconly"
+
+/** images */
 import temp from "@/assets/collections/mindset/say-less-[black].webp"
 
 export default function Featured() {
@@ -26,6 +30,7 @@ export default function Featured() {
                 infinite
                 keyboardNavigation
                 disableDotsControls
+                mouseTracking
                 paddingLeft={70}
                 paddingRight={70}
                 autoPlay
@@ -82,67 +87,77 @@ export default function Featured() {
     )
 }
 
-// const temp = "/assets/collections/mindset/say-less-[black].webp"
-
 const images = [
     <Image
-        src={temp.src}
-        alt="temp"
-        autoResize
-        css={{
-            backgroundImage: "$grayscale",
-            borderRadius: "$lg",
-        }}
         key={1}
-    />,
-    <Image
         src={temp.src}
         alt="temp"
         autoResize
+        onDragStart={(e) => e.preventDefault()}
+        role="presentation"
         css={{
             backgroundImage: "$grayscale",
             borderRadius: "$lg",
         }}
+    />,
+    <Image
         key={2}
-    />,
-    <Image
         src={temp.src}
         alt="temp"
         autoResize
+        onDragStart={(e) => e.preventDefault()}
+        role="presentation"
         css={{
             backgroundImage: "$grayscale",
             borderRadius: "$lg",
         }}
+    />,
+    <Image
         key={3}
-    />,
-    <Image
         src={temp.src}
         alt="temp"
         autoResize
+        onDragStart={(e) => e.preventDefault()}
+        role="presentation"
         css={{
             backgroundImage: "$grayscale",
             borderRadius: "$lg",
         }}
+    />,
+    <Image
         key={4}
-    />,
-    <Image
         src={temp.src}
         alt="temp"
         autoResize
+        onDragStart={(e) => e.preventDefault()}
+        role="presentation"
         css={{
             backgroundImage: "$grayscale",
             borderRadius: "$lg",
         }}
+    />,
+    <Image
         key={5}
-    />,
-    <Image
         src={temp.src}
         alt="temp"
         autoResize
+        onDragStart={(e) => e.preventDefault()}
+        role="presentation"
         css={{
             backgroundImage: "$grayscale",
             borderRadius: "$lg",
         }}
+    />,
+    <Image
         key={6}
+        src={temp.src}
+        alt="temp"
+        autoResize
+        onDragStart={(e) => e.preventDefault()}
+        role="presentation"
+        css={{
+            backgroundImage: "$grayscale",
+            borderRadius: "$lg",
+        }}
     />,
 ]
