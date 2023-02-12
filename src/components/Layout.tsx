@@ -17,64 +17,66 @@ export default function Layout({ children }: Children) {
     const LayoutRef: MutableRefObject<HTMLElement | null> = useRef(null)
 
     return (
-        <div
-            className={inter.className}
-            style={{
-                maxWidth: "100%",
-                maxHeight: "100svh",
-                boxSizing: "border-box",
-                overflow: "scroll",
-                overscrollBehavior: "contain",
-            }}
-        >
-            <Header LayoutRef={LayoutRef} />
-            {children}
-            {/* <Footer /> */}
-
+        <>
             {/** Background Effects*/}
-            <Image
+            <div
                 aria-hidden="true"
-                src="/effects/gradient-right-dark.svg"
-                alt="gradient violet background"
-                css={{
+                style={{
                     position: "fixed",
-                    top: "-45%",
-                    right: "-40%",
-                    mixBlendMode: "screen",
-                    filter: "saturate(1.8)",
-                    opacity: 0.6,
-                    zIndex: -1,
+                    top: 0,
+                    willChange: "transform",
                 }}
-            />
-            <Image
+            >
+                <Image
+                    src="/effects/gradient-right-dark.svg"
+                    alt="gradient violet background"
+                    css={{
+                        position: "relative",
+                        mt: "-45%",
+                        ml: "45%",
+                        filter: "blur(16px) saturate(1.8)",
+                        opacity: 0.6,
+                    }}
+                />
+            </div>
+
+            <div
                 aria-hidden="true"
-                src="/effects/bg-wordplay.svg"
-                alt="wordplay background effect"
-                css={{
+                style={{
                     position: "fixed",
-                    top: "0%",
-                    mixBlendMode: "screen",
-                    filter: "blur(8px) saturate(1.8)",
-                    opacity: 0.6,
-                    zIndex: -1,
-                    overflow: "hidden",
+                    bottom: 0,
+                    left: 0,
+                    willChange: "transform",
                 }}
-            />
-            <Image
-                aria-hidden="true"
-                src="/effects/gradient-left-dark.svg"
-                alt="gradient blue background"
-                css={{
-                    position: "fixed",
-                    bottom: "-50%",
-                    left: "-30%",
-                    mixBlendMode: "screen",
-                    filter: "saturate(1.8)",
-                    opacity: 0.6,
-                    zIndex: -1,
-                    overflow: "hidden",
-                }}
-            />
-        </div>
+            >
+                <Image
+                    src="/effects/gradient-left-dark.svg"
+                    alt="gradient blue background"
+                    css={{
+                        position: "relative",
+                        mb: "-35%",
+                        ml: "-20%",
+                        filter: "blur(16px) saturate(1.8)",
+                        opacity: 0.8,
+                    }}
+                />
+            </div>
+
+            <div
+                className={inter.className}
+                style={
+                    {
+                        // maxWidth: "100%",
+                        // boxSizing: "border-box",
+                        // overflow: "scroll",
+                        // overscrollBehavior: "contain",
+                    }
+                }
+            >
+                <Header LayoutRef={LayoutRef} />
+                {children}
+                {/* <Footer /> */}
+            </div>
+        </>
     )
 }

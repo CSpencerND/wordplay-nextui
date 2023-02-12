@@ -14,8 +14,8 @@ import hero from "@/assets/hero.webp"
 import galleryImageData from "@/assets/gallery"
 
 /** font */
-import localFont from '@next/font/local'
-const graffiti = localFont({src: "../assets/font/don_graffiti/DonGraffiti.otf"})
+import localFont from "@next/font/local"
+const graffiti = localFont({ src: "../assets/font/don_graffiti/DonGraffiti.otf" })
 
 // export async function getStaticProps() {
 //     const response = await fetch("http://localhost:3000/api/featured")
@@ -90,7 +90,21 @@ const Hero = (): JSX.Element => {
 
 const About = (): JSX.Element => {
     return (
-        <Card as="section" css={{ p: "$md", bgBlur: "$backgroundContrastAlpha", position: "relative" }}>
+        <Card
+            as="section"
+            css={{ p: "$md", bgBlur: "$backgroundContrastAlpha", position: "relative" }}
+        >
+            <Card.Image
+                aria-hidden="true"
+                src="/effects/bg-wordplay.svg"
+                alt="wordplay4lyfe graffiti background"
+                css={{
+                    position: "fixed",
+                    inset: 0,
+                    filter: "blur(8px) saturate(1.8)",
+                    opacity: 0.6
+                }}
+            />
             <Card.Body as="article">
                 <Text h3>Why we love what we do</Text>
                 <Spacer y={0.5}></Spacer>
