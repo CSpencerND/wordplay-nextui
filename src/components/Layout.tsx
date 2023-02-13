@@ -4,7 +4,7 @@ import type { Children } from "types"
 
 /** components */
 import Header from "./Header/Header"
-import { Image } from "@nextui-org/react"
+import { Image, Col } from "@nextui-org/react"
 
 /** hooks */
 import { useRef } from "react"
@@ -23,12 +23,13 @@ export default function Layout({ children }: Children) {
                 height: "100vh",
                 overflowY: "auto",
                 overflowX: "hidden",
-                overscrollBehavior: "none"
+                overscrollBehaviorY: "contain"
             }}
         >
             <BGFX />
             <Header LayoutRef={LayoutRef} />
             {children}
+
             {/* <Footer /> */}
         </div>
     )
@@ -36,49 +37,38 @@ export default function Layout({ children }: Children) {
 
 const BGFX = () => {
     return (
-        <div aria-hidden="true">
-            <div
-                style={{
-                    position: "fixed",
-                    top: 0,
-                    width: "100vw",
-                    height: "100vw",
+        <>
+            <Image
+                src="/effects/gradient-right-dark.webp"
+                alt="gradient violet background"
+                aria-hidden
+                css={{
                     willChange: "transform",
-                }}
-            >
-                <Image
-                    src="/effects/gradient-right-dark.svg"
-                    alt="gradient violet background"
-                    css={{
-                        position: "relative",
-                        mt: "-45%",
-                        ml: "45%",
-                        filter: "blur(16px)",
-                        opacity: 0.6,
-                    }}
-                />
-            </div>
-
-            <div
-                style={{
                     position: "fixed",
+                    height: "fit-content",
+                    top: 0,
+                    right: 0,
+                    translate: "50% -50%",
+                    filter: "blur(16px)",
+                    opacity: 0.6,
+                }}
+            />
+            <Image
+                src="/effects/gradient-left-dark.webp"
+                alt="gradient blue background"
+                aria-hidden
+                css={{
+                    willChange: "transform",
+                    position: "fixed",
+                    height: "fit-content",
+                    width: "fit-content",
                     bottom: 0,
                     left: 0,
-                    willChange: "transform",
+                    translate: "-25% 50%",
+                    filter: "blur(16px)",
+                    opacity: 0.6,
                 }}
-            >
-                <Image
-                    src="/effects/gradient-left-dark.svg"
-                    alt="gradient blue background"
-                    css={{
-                        position: "relative",
-                        mb: "-35%",
-                        ml: "-20%",
-                        filter: "blur(16px)",
-                        opacity: 0.6,
-                    }}
-                />
-            </div>
-        </div>
+            />
+        </>
     )
 }

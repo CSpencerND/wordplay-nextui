@@ -94,17 +94,40 @@ const About = (): JSX.Element => {
             as="section"
             css={{ p: "$md", bgBlur: "$backgroundContrastAlpha", position: "relative" }}
         >
-            <Card.Image
-                aria-hidden="true"
-                src="/effects/bg-wordplay.svg"
-                alt="wordplay4lyfe graffiti background"
-                css={{
-                    position: "fixed",
+            <div
+                aria-hidden
+                style={{
+                    position: "absolute",
+                    height: "100%",
                     inset: 0,
+                    opacity: 0.6,
                     filter: "blur(8px) saturate(1.8)",
-                    opacity: 0.6
+                    display: "flex",
+                    flexDirection: "row",
+                    // flexWrap: "wrap",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    justifyItems: "center",
+                    alignContent: "center",
+                    // width: "100%"
                 }}
-            />
+            >
+                <Card.Image
+                    aria-hidden="true"
+                    src="/effects/bg-word.webp"
+                    alt="wordplay4lyfe graffiti background"
+                />
+                <Card.Image
+                    aria-hidden="true"
+                    src="/effects/bg-play.webp"
+                    alt="wordplay4lyfe graffiti background"
+                />
+                {/* <Card.Image */}
+                {/*     aria-hidden="true" */}
+                {/*     src="/effects/bg-4lyfe.webp" */}
+                {/*     alt="wordplay4lyfe graffiti background" */}
+                {/* /> */}
+            </div>
             <Card.Body as="article">
                 <Text h3>Why we love what we do</Text>
                 <Spacer y={0.5}></Spacer>
