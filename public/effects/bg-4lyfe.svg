@@ -2,13 +2,16 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="1022.3729mm"
-   height="190.86667mm"
-   viewBox="0 0 1022.3729 190.86667"
+   width="373.01358mm"
+   height="171.99309mm"
+   viewBox="0 0 373.01358 171.99309"
    version="1.1"
    id="svg5"
    inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
-   sodipodi:docname="bg-creative.svg"
+   sodipodi:docname="bg-4lyfe.svg"
+   inkscape:export-filename="bg-4lyfe.webp"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -26,31 +29,31 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="0.33165719"
-     inkscape:cx="2121.1662"
-     inkscape:cy="714.59329"
-     inkscape:window-width="2100"
-     inkscape:window-height="1037"
-     inkscape:window-x="1157"
-     inkscape:window-y="122"
+     inkscape:cx="214.07647"
+     inkscape:cy="-293.97825"
+     inkscape:window-width="1499"
+     inkscape:window-height="1236"
+     inkscape:window-x="1610"
+     inkscape:window-y="118"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1" />
   <defs
      id="defs2">
     <linearGradient
        inkscape:collect="always"
-       id="linearGradient1327">
+       id="linearGradient3683">
       <stop
          style="stop-color:#d926aa;stop-opacity:1;"
          offset="0"
-         id="stop1323" />
+         id="stop3677" />
       <stop
          style="stop-color:#661ae6;stop-opacity:1;"
-         offset="0.5"
-         id="stop1331" />
+         offset="0.3703033"
+         id="stop3679" />
       <stop
          style="stop-color:#1fb2a5;stop-opacity:1"
          offset="1"
-         id="stop1325" />
+         id="stop3681" />
     </linearGradient>
     <rect
        x="-9.0454845"
@@ -60,19 +63,19 @@
        id="rect236" />
     <linearGradient
        inkscape:collect="always"
-       xlink:href="#linearGradient1327"
-       id="linearGradient1329"
-       x1="226.58722"
-       y1="408.76767"
-       x2="694.67218"
-       y2="32.224228"
+       xlink:href="#linearGradient3683"
+       id="linearGradient3675"
+       x1="40.221779"
+       y1="472.47263"
+       x2="315.6377"
+       y2="353.38165"
        gradientUnits="userSpaceOnUse" />
   </defs>
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-3.1890728,-136.9168)">
+     transform="translate(7.1477697,-502.47683)">
     <text
        xml:space="preserve"
        transform="scale(0.26458333)"
@@ -80,14 +83,14 @@
        style="font-size:268.98px;font-family:Julee;-inkscape-font-specification:'Julee, Normal';white-space:pre;shape-inside:url(#rect236);display:inline;fill:#ffffff;stroke:#000000;stroke-width:1.19" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:198.139px;font-family:'Don Graffiti';-inkscape-font-specification:'Don Graffiti, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:url(#linearGradient1329);fill-opacity:1;stroke:#000000;stroke-width:0.876593"
-       x="4.9711885"
-       y="290.67297"
-       id="text242"><tspan
+       style="font-size:198.139px;font-family:'Don Graffiti';-inkscape-font-specification:'Don Graffiti, Normal';fill:url(#linearGradient3675);fill-opacity:1;stroke:#000000;stroke-width:0.314854"
+       x="-5.7305217"
+       y="648.45105"
+       id="text3302"><tspan
          sodipodi:role="line"
-         id="tspan2427"
-         x="4.9711885"
-         y="290.67297"
-         style="fill:url(#linearGradient1329)">Creative Minds</tspan></text>
+         id="tspan3300"
+         style="fill:url(#linearGradient3675);fill-opacity:1;stroke-width:0.314854"
+         x="-5.7305217"
+         y="648.45105">4LYFE</tspan></text>
   </g>
 </svg>

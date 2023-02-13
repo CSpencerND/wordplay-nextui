@@ -9,6 +9,9 @@
    id="svg5"
    inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
    sodipodi:docname="bg-mindset.svg"
+   inkscape:export-filename="bg-mindset.webp"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -25,13 +28,13 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="0.33165719"
-     inkscape:cx="2121.1662"
-     inkscape:cy="714.59329"
-     inkscape:window-width="2100"
-     inkscape:window-height="1037"
-     inkscape:window-x="1157"
-     inkscape:window-y="122"
+     inkscape:zoom="0.1658286"
+     inkscape:cx="771.88135"
+     inkscape:cy="895.50297"
+     inkscape:window-width="1499"
+     inkscape:window-height="1236"
+     inkscape:window-x="1608"
+     inkscape:window-y="116"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1" />
   <defs
@@ -45,7 +48,7 @@
          id="stop1323" />
       <stop
          style="stop-color:#661ae6;stop-opacity:1;"
-         offset="0.5"
+         offset="0.51780915"
          id="stop1331" />
       <stop
          style="stop-color:#1fb2a5;stop-opacity:1"
@@ -62,10 +65,10 @@
        inkscape:collect="always"
        xlink:href="#linearGradient1327"
        id="linearGradient1329"
-       x1="226.58722"
-       y1="408.76767"
-       x2="694.67218"
-       y2="32.224228"
+       x1="128.49771"
+       y1="366.44745"
+       x2="477.79364"
+       y2="92.272865"
        gradientUnits="userSpaceOnUse" />
   </defs>
   <g

@@ -2,14 +2,14 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="579.09833mm"
-   height="172.55484mm"
-   viewBox="0 0 579.09833 172.55484"
+   width="377.75589mm"
+   height="361.1098mm"
+   viewBox="0 0 377.75588 361.1098"
    version="1.1"
    id="svg5"
    inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
-   sodipodi:docname="bg-lifestyle.svg"
-   inkscape:export-filename="bg-lifestyle.webp"
+   sodipodi:docname="bg-staff-two-line.svg"
+   inkscape:export-filename="bg-staff-two-line.webp"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -29,16 +29,32 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="0.33165719"
-     inkscape:cx="2148.3026"
-     inkscape:cy="702.53264"
-     inkscape:window-width="2168"
-     inkscape:window-height="1331"
-     inkscape:window-x="1323"
-     inkscape:window-y="0"
+     inkscape:cx="1076.4127"
+     inkscape:cy="701.02506"
+     inkscape:window-width="2131"
+     inkscape:window-height="1286"
+     inkscape:window-x="1322"
+     inkscape:window-y="16"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1" />
   <defs
      id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient3215">
+      <stop
+         style="stop-color:#d926aa;stop-opacity:1;"
+         offset="0"
+         id="stop3209" />
+      <stop
+         style="stop-color:#661ae6;stop-opacity:1;"
+         offset="0.40142143"
+         id="stop3211" />
+      <stop
+         style="stop-color:#1fb2a5;stop-opacity:1"
+         offset="1"
+         id="stop3213" />
+    </linearGradient>
     <linearGradient
        inkscape:collect="always"
        id="linearGradient1327">
@@ -65,17 +81,26 @@
        inkscape:collect="always"
        xlink:href="#linearGradient1327"
        id="linearGradient1329"
-       x1="49.045067"
-       y1="323.93637"
-       x2="516.95618"
-       y2="128.61133"
+       x1="74.093315"
+       y1="457.91992"
+       x2="294.63776"
+       y2="222.91295"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3215"
+       id="linearGradient3207"
+       x1="74.093315"
+       y1="457.91992"
+       x2="294.63776"
+       y2="222.91295"
        gradientUnits="userSpaceOnUse" />
   </defs>
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0.14843463,-144.41788)">
+     transform="translate(-3.2110502,-144.55262)">
     <text
        xml:space="preserve"
        transform="scale(0.26458333)"
@@ -88,9 +113,20 @@
        y="290.67297"
        id="text242"><tspan
          sodipodi:role="line"
-         id="tspan2395"
          x="4.9711885"
          y="290.67297"
-         style="fill:url(#linearGradient1329)">Lifestyle</tspan></text>
+         style="fill:url(#linearGradient1329)"
+         id="tspan2755">Staff</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:210.491px;font-family:'Don Graffiti';-inkscape-font-specification:'Don Graffiti, Normal';fill:url(#linearGradient3207);stroke:#000000;stroke-width:0.334481;fill-opacity:1"
+       x="5.5544972"
+       y="473.85385"
+       id="text2761"><tspan
+         sodipodi:role="line"
+         id="tspan2759"
+         style="stroke-width:0.334481;fill-opacity:1;fill:url(#linearGradient3207)"
+         x="5.5544972"
+         y="473.85385">PICKS</tspan></text>
   </g>
 </svg>

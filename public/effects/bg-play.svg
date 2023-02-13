@@ -2,14 +2,14 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="579.09833mm"
-   height="172.55484mm"
-   viewBox="0 0 579.09833 172.55484"
+   width="279.58542mm"
+   height="171.99309mm"
+   viewBox="0 0 279.58542 171.99309"
    version="1.1"
    id="svg5"
    inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
-   sodipodi:docname="bg-lifestyle.svg"
-   inkscape:export-filename="bg-lifestyle.webp"
+   sodipodi:docname="bg-play.svg"
+   inkscape:export-filename="bg-play.webp"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -29,31 +29,31 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="0.33165719"
-     inkscape:cx="2148.3026"
-     inkscape:cy="702.53264"
-     inkscape:window-width="2168"
-     inkscape:window-height="1331"
-     inkscape:window-x="1323"
-     inkscape:window-y="0"
+     inkscape:cx="708.56296"
+     inkscape:cy="716.10086"
+     inkscape:window-width="1499"
+     inkscape:window-height="1236"
+     inkscape:window-x="1608"
+     inkscape:window-y="116"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1" />
   <defs
      id="defs2">
     <linearGradient
        inkscape:collect="always"
-       id="linearGradient1327">
+       id="linearGradient3691">
       <stop
          style="stop-color:#d926aa;stop-opacity:1;"
          offset="0"
-         id="stop1323" />
+         id="stop3685" />
       <stop
          style="stop-color:#661ae6;stop-opacity:1;"
-         offset="0.5"
-         id="stop1331" />
+         offset="0.36707976"
+         id="stop3687" />
       <stop
          style="stop-color:#1fb2a5;stop-opacity:1"
          offset="1"
-         id="stop1325" />
+         id="stop3689" />
     </linearGradient>
     <rect
        x="-9.0454845"
@@ -63,19 +63,20 @@
        id="rect236" />
     <linearGradient
        inkscape:collect="always"
-       xlink:href="#linearGradient1327"
-       id="linearGradient1329"
-       x1="49.045067"
-       y1="323.93637"
-       x2="516.95618"
-       y2="128.61133"
-       gradientUnits="userSpaceOnUse" />
+       xlink:href="#linearGradient3691"
+       id="linearGradient3673"
+       x1="40.221779"
+       y1="472.47263"
+       x2="315.6377"
+       y2="353.38165"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(28.441778,-127.1338)" />
   </defs>
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0.14843463,-144.41788)">
+     transform="translate(-65.458412,-199.06353)">
     <text
        xml:space="preserve"
        transform="scale(0.26458333)"
@@ -83,14 +84,14 @@
        style="font-size:268.98px;font-family:Julee;-inkscape-font-specification:'Julee, Normal';white-space:pre;shape-inside:url(#rect236);display:inline;fill:#ffffff;stroke:#000000;stroke-width:1.19" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:198.139px;font-family:'Don Graffiti';-inkscape-font-specification:'Don Graffiti, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:url(#linearGradient1329);fill-opacity:1;stroke:#000000;stroke-width:0.876593"
-       x="4.9711885"
-       y="290.67297"
-       id="text242"><tspan
+       style="font-size:198.139px;font-family:'Don Graffiti';-inkscape-font-specification:'Don Graffiti, Normal';fill:url(#linearGradient3673);fill-opacity:1;stroke:#000000;stroke-width:0.314854"
+       x="66.895966"
+       y="345.03775"
+       id="text3298"><tspan
          sodipodi:role="line"
-         id="tspan2395"
-         x="4.9711885"
-         y="290.67297"
-         style="fill:url(#linearGradient1329)">Lifestyle</tspan></text>
+         id="tspan3296"
+         style="fill:url(#linearGradient3673);fill-opacity:1;stroke-width:0.314854"
+         x="66.895966"
+         y="345.03775">PLAY</tspan></text>
   </g>
 </svg>
