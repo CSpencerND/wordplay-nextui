@@ -229,14 +229,14 @@ const AboutBGFX = () => {
                 }}
                 css={{
                     objectFit: "fill",
-                    height: "200px",
+                    height: "100px",
                     "@xs": {
                         objectFit: "contain",
-                        maxHeight: "200px",
+                        maxHeight: "100px",
                     },
                     "@md": {
-                        height: "300px",
-                        maxHeight: "300px",
+                        height: "200px",
+                        maxHeight: "200px",
                     },
                 }}
             />
