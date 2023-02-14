@@ -7,20 +7,28 @@ import Head from "next/head"
 import NextLink from "next/link"
 import { Container, Card, Grid, Row, Text } from "@nextui-org/react"
 
+/** utils */
+import { useRouter } from "next/router"
+
 /**********************************************************************************************/
 
 const CollectionsDirectory: NextPage = () => {
-     
+    const path = useRouter().query.collection as string
+    const title = pathData[path]
+
     return (
         <>
             <Head>
-                <title>WP4L | {}</title>
+                <title>WP4L | {title}</title>
                 <meta name="description" content="" />
                 <meta name="viewport" content="minimum-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <Container as="main" lg>
+            <Container as="main" lg css={{ my: "$xl" }}>
+                <Row justify="center">
+                    <Text h2>{title}</Text>
+                </Row>
                 <ProductGrid />
             </Container>
         </>
@@ -33,8 +41,8 @@ export default CollectionsDirectory
 
 const ProductGrid = () => {
     return (
-        <Grid.Container as="ul" gap={2} css={{ my: "$xl" }}>
-            {collectionLinks.map(({ title, pathName, image }: CollectionLinkData, i) => (
+        <Grid.Container as="ul" gap={2}>
+            {collectionLinks.map(({ title, pathName, image }, i) => (
                 <Grid
                     as="li"
                     xs={6}
@@ -57,13 +65,13 @@ const ProductGrid = () => {
                                 />
                             </Card.Body>
                             <Card.Footer
-                                isBlurred
-                                css={{
-                                    position: "absolute",
-                                    bottom: 0,
-                                    zIndex: 1,
-                                    bgBlur: "$backgroundAlpha",
-                                }}
+                            // isBlurred
+                            // css={{
+                            //     position: "absolute",
+                            //     bottom: 0,
+                            //     zIndex: 1,
+                            //     bgBlur: "$backgroundAlpha",
+                            // }}
                             >
                                 <Row wrap="wrap" justify="center" align="center">
                                     <Text b>{title}</Text>
@@ -77,35 +85,42 @@ const ProductGrid = () => {
     )
 }
 
+const pathData: { [x: string]: string } = {
+    "staff-picks": "Staff Picks",
+    "summer-22": "Summer '22",
+    mindset: "Mindset",
+    lifestyle: "Lifestyle",
+    creativity: "Creativity",
+}
+
 interface CollectionLinkData extends PageLinkData {
     image: string
 }
 
 const collectionLinks: CollectionLinkData[] = [
     {
-        title: "Staff Picks",
+        title: "Shirt 1",
         pathName: "collections/staff-picks",
         image: "/assets/collections/mindset/say-less-[black].webp",
     },
     {
-        title: "Summer '22",
+        title: "Shirt 2",
         pathName: "collections/summer-22",
         image: "/assets/collections/mindset/say-less-[black].webp",
     },
     {
-        title: "Mindset",
+        title: "Shirt 3",
         pathName: "collections/mindset",
         image: "/assets/collections/mindset/say-less-[black].webp",
     },
     {
-        title: "Lifestyle",
+        title: "Shirt 4",
         pathName: "collections/lifestyle",
         image: "/assets/collections/mindset/say-less-[black].webp",
     },
     {
-        title: "Creativity",
+        title: "Shirt 5",
         pathName: "collections/creativity",
         image: "/assets/collections/mindset/say-less-[black].webp",
     },
 ]
-

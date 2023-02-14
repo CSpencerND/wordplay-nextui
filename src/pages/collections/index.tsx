@@ -19,7 +19,10 @@ const CollectionsDirectory: NextPage = () => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <Container as="main" lg>
+            <Container as="main" lg css={{ my: "$xl" }}>
+                <Row justify="center">
+                    <Text h2>Collections</Text>
+                </Row>
                 <CollectionGrid />
             </Container>
         </>
@@ -32,7 +35,7 @@ export default CollectionsDirectory
 
 const CollectionGrid = () => {
     return (
-        <Grid.Container as="ul" gap={2} css={{ my: "$xl" }}>
+        <Grid.Container as="ul" gap={2}>
             {collectionLinks.map(({ title, pathName, image }: CollectionLinkData, i) => (
                 <Grid
                     as="li"
@@ -56,13 +59,13 @@ const CollectionGrid = () => {
                                 />
                             </Card.Body>
                             <Card.Footer
-                                // isBlurred
-                                // css={{
-                                //     position: "absolute",
-                                //     bottom: 0,
-                                //     zIndex: 1,
-                                //     bgBlur: "$backgroundAlpha",
-                                // }}
+                            // isBlurred
+                            // css={{
+                            //     position: "absolute",
+                            //     bottom: 0,
+                            //     zIndex: 1,
+                            //     bgBlur: "$backgroundAlpha",
+                            // }}
                             >
                                 <Row wrap="wrap" justify="center" align="center">
                                     <Text b>{title}</Text>
