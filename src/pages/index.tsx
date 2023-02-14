@@ -32,19 +32,25 @@ const Home: NextPage = () => {
             <Head>
                 <title>WordPlay4Lyfe</title>
                 <meta name="description" content="" />
+                <meta name="viewport" content="minimum-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
             <Container as="main" lg>
-                <Row as="section" css={{ my: "$xl" }}>
+                <Row
+                    as="section"
+                    css={{
+                        my: "$xl",
+                    }}
+                >
                     <Hero />
                 </Row>
                 <Row as="section" css={{ my: "$xl" }}>
-                    <FeaturedBGFX />
+                    {/* <FeaturedBGFX /> */}
                     <Featured />
                 </Row>
                 <Row as="section" css={{ my: "$xl" }}>
-                    <AboutBGFX />
+                    {/* <AboutBGFX /> */}
                     <About />
                 </Row>
                 <Row as="section" css={{ my: "$xl" }}>
@@ -97,7 +103,8 @@ const Hero = (): JSX.Element => {
 
 const About = (): JSX.Element => {
     return (
-        <Card css={{ p: "$md", bgBlur: "$backgroundContrastAlpha", position: "relative" }}>
+        // <Card css={{ p: "$md", bgBlur: "$backgroundContrastAlpha", position: "relative" }}>
+        <Card css={{ p: "$md", position: "relative" }}>
             <Card.Body as="article">
                 <Text h3>Why we love what we do</Text>
                 <Spacer y={0.5}></Spacer>

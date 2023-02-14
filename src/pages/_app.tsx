@@ -5,10 +5,11 @@ import Layout from "@/components/Layout"
 import "@/styles/globals.css"
 const globalCSS = globalCss({
     // body: {
-        // backgroundColor: "hsla(240,16%,16%,0.6)"
-        // bgBlur: "$backgroundAlpha",
-        // backgroundImage:
-        //     "linear-gradient(15deg, rgba(0,114,245,0.6) 0%, rgba(0,0,0,0.6) 15%, rgba(0,0,0,0.6) 85%, rgba(102,26,230,0.5984594521402311) 95%, rgba(31,178,165,0.6) 100%)",
+    // bgBlur: "hsla(240,12%,8%,0.6)",
+    // bgBlur: "hsla(240,12%,8%,0.6)",
+    // bgBlur: "hsla(240,16%,8%,0.6)",
+    //     backgroundImage:
+    //         "linear-gradient(to top, hsl(240, 18%, 8%) 25%, hsl(240, 18%, 15%) 100%)",
     // },
 
     "li.alice-carousel__stage-item": {
@@ -33,12 +34,16 @@ const theme = createTheme({
     type: "dark",
     theme: {
         colors: {
-            // background:                 "hsla(240,16%,8%,1)",
+            // background:
+            //     "linear-gradient(to top, hsl(240, 18%, 8%) 25%, hsl(240, 18%, 15%) 100%)",
             // backgroundAlpha:            "hsla(240,16%,8%,0.6)",
-            // backgroundContrast:         "hsla(240,16%,12%,1)",
+            // backgroundAlpha:
+            //     "linear-gradient(to top, hsla(240, 18%, 8%, 0.6) 25%, hsla(240, 18%, 15%) 100%, 0.6)",
+            // backgroundContrast: "hsla(240,16%,12%,1)",
+            // backgroundContrast: "hsla(240, 18%, 20%, 1)",
             // backgroundContrastAlpha:    "hsla(240,12%,12%,0.3)",
-            backgroundContrastAlpha: "hsla(240,12%,20%,0.8)",
-            grayscale: "linear-gradient(to top, hsla(240,16%,25%,0.8), hsla(240,16%,100%,0.8))",
+            // backgroundContrastAlpha: "hsla(240,12%,16%,0.8)",
+            grayscale: "linear-gradient(to top, hsla(240,16%,25%,0.6), hsla(240,16%,100%,0.6))",
             primaryLight: "var(--nextui-colors-purple50)",
             primaryLightHover: "var(--nextui-colors-purple100)",
             primaryLightActive: "var(--nextui-colors-purple200)",
