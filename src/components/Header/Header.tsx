@@ -3,8 +3,8 @@ import type { MutableRefObject } from "react"
 import type { PageLinkData } from "types"
 
 /** components */
-import Image from "next/image"
-import { Button, Navbar, Link, Text } from "@nextui-org/react"
+import NextImage from "next/image"
+import { Button, Navbar, Link, Text, Image } from "@nextui-org/react"
 import { Spiral as Burger } from "hamburger-react"
 import { Login, Buy } from "react-iconly"
 
@@ -48,7 +48,7 @@ export default function Header({ LayoutRef }: HeaderProps) {
                     </Navbar.Toggle>
                     <Navbar.Brand>
                         <Link href="/" style={{ paddingTop: "0.5rem" }}>
-                            <Image src={logo} alt="wordplay4lyfe logo" height={48} />
+                            <NextImage src={logo} alt="wordplay4lyfe logo" height={48} />
                         </Link>
                     </Navbar.Brand>
                 </Navbar.Content>
@@ -72,6 +72,20 @@ export default function Header({ LayoutRef }: HeaderProps) {
                     ))}
                 </Navbar.Collapse>
             </Navbar>
+            <Image
+                src="/effects/gradient-right-dark.webp"
+                alt="gradient violet background"
+                aria-hidden
+                css={{
+                    position: "fixed",
+                    height: "fit-content",
+                    top: 0,
+                    right: 0,
+                    translate: "45% -45%",
+                    filter: "blur(16px) saturate(1.8))",
+                    opacity: 0.6,
+                }}
+            />
         </>
     )
 }

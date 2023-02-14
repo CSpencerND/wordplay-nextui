@@ -3,12 +3,13 @@ import { NextUIProvider, createTheme, globalCss } from "@nextui-org/react"
 import Layout from "@/components/Layout"
 
 import "@/styles/globals.css"
-
 const globalCSS = globalCss({
-    body: {
+    // body: {
         // backgroundColor: "hsla(240,16%,16%,0.6)"
-        bgBlur: "$backgroundAlpha",
-    },
+        // bgBlur: "$backgroundAlpha",
+        // backgroundImage:
+        //     "linear-gradient(15deg, rgba(0,114,245,0.6) 0%, rgba(0,0,0,0.6) 15%, rgba(0,0,0,0.6) 85%, rgba(102,26,230,0.5984594521402311) 95%, rgba(31,178,165,0.6) 100%)",
+    // },
 
     "li.alice-carousel__stage-item": {
         px: "0.5rem",
@@ -36,7 +37,7 @@ const theme = createTheme({
             // backgroundAlpha:            "hsla(240,16%,8%,0.6)",
             // backgroundContrast:         "hsla(240,16%,12%,1)",
             // backgroundContrastAlpha:    "hsla(240,12%,12%,0.3)",
-            backgroundContrastAlpha: "hsla(240,12%,20%,0.6)",
+            backgroundContrastAlpha: "hsla(240,12%,20%,0.8)",
             grayscale: "linear-gradient(to top, hsla(240,16%,25%,0.8), hsla(240,16%,100%,0.8))",
             primaryLight: "var(--nextui-colors-purple50)",
             primaryLightHover: "var(--nextui-colors-purple100)",

@@ -5,7 +5,7 @@ import { type NextPage } from "next"
 import Head from "next/head"
 import NextImage from "next/image"
 // import Link from "next/link"
-import { Container, Card, Text, Spacer, Image } from "@nextui-org/react"
+import { Container, Card, Text, Spacer, Image, Col, Row } from "@nextui-org/react"
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry"
 import Featured from "@/components/Featured/Featured"
 
@@ -36,15 +36,22 @@ const Home: NextPage = () => {
             </Head>
 
             <Container as="main" lg>
-                <Spacer y={2} />
-                <Hero />
-                <Spacer y={2} />
-                <Featured />
-                <Spacer y={2} />
-                <About />
-                <Spacer y={2} />
-                <Gallery />
-                <Spacer y={2} />
+                <Row as="section" css={{ my: "$xl" }}>
+                    <Hero />
+                </Row>
+                <Row as="section" css={{ my: "$xl" }}>
+                    <FeaturedBGFX />
+                    <Featured />
+                </Row>
+                <Row as="section" css={{ my: "$xl" }}>
+                    <AboutBGFX />
+                    <About />
+                </Row>
+                <Row as="section" css={{ my: "$xl" }}>
+                    <Col>
+                        <Gallery />
+                    </Col>
+                </Row>
             </Container>
         </>
     )
@@ -90,44 +97,7 @@ const Hero = (): JSX.Element => {
 
 const About = (): JSX.Element => {
     return (
-        <Card
-            as="section"
-            css={{ p: "$md", bgBlur: "$backgroundContrastAlpha", position: "relative" }}
-        >
-            <div
-                aria-hidden
-                style={{
-                    position: "absolute",
-                    height: "100%",
-                    inset: 0,
-                    opacity: 0.6,
-                    filter: "blur(8px) saturate(1.8)",
-                    display: "flex",
-                    flexDirection: "row",
-                    // flexWrap: "wrap",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    justifyItems: "center",
-                    alignContent: "center",
-                    // width: "100%"
-                }}
-            >
-                <Card.Image
-                    aria-hidden="true"
-                    src="/effects/bg-word.webp"
-                    alt="wordplay4lyfe graffiti background"
-                />
-                <Card.Image
-                    aria-hidden="true"
-                    src="/effects/bg-play.webp"
-                    alt="wordplay4lyfe graffiti background"
-                />
-                {/* <Card.Image */}
-                {/*     aria-hidden="true" */}
-                {/*     src="/effects/bg-4lyfe.webp" */}
-                {/*     alt="wordplay4lyfe graffiti background" */}
-                {/* /> */}
-            </div>
+        <Card css={{ p: "$md", bgBlur: "$backgroundContrastAlpha", position: "relative" }}>
             <Card.Body as="article">
                 <Text h3>Why we love what we do</Text>
                 <Spacer y={0.5}></Spacer>
@@ -153,21 +123,124 @@ const About = (): JSX.Element => {
 
 const Gallery = (): JSX.Element => {
     const galleryImages = galleryImageData.map(({ src, alt }, i) => {
-        return (
-            <Image
-                src={src.src}
-                alt={alt}
-                key={i}
-                css={{ borderRadius: "$md" }}
-                // style={{ width: "auto", height: "auto", borderRadius: 12 }}
-            />
-        )
+        return <Image src={src.src} alt={alt} key={i} css={{ borderRadius: "$md" }} />
     })
 
     return (
         <ResponsiveMasonry columnsCountBreakPoints={{ 0: 1, 360: 2, 1024: 3 }}>
             <Masonry gutter="1rem">{galleryImages}</Masonry>
         </ResponsiveMasonry>
+    )
+}
+
+const FeaturedBGFX = () => {
+    return (
+        <Col
+            aria-hidden
+            css={{
+                position: "absolute",
+                display: "grid",
+                placeItems: "center",
+                width: "100%",
+                height: "100%",
+                opacity: 0.6,
+                filter: "blur(8px)",
+            }}
+        >
+            <Image
+                src="/effects/gradient-left-dark.webp"
+                alt="gradient blue background"
+                aria-hidden
+                containerCss={{
+                    position: "absolute",
+                    top: "-50%",
+                    translate: "-50%",
+                    "@xs": {
+                        top: "-75%",
+                    },
+                    "@md": {
+                        top: "-100%",
+                    },
+                    "@xl": {
+                        top: "-125%",
+                        left: "-35%",
+                    },
+                }}
+            />
+        </Col>
+    )
+}
+
+const AboutBGFX = () => {
+    return (
+        <Col
+            aria-hidden
+            css={{
+                position: "absolute",
+                display: "grid",
+                placeItems: "center",
+                width: "100%",
+                height: "100%",
+                opacity: 0.6,
+                filter: "blur(8px)",
+            }}
+        >
+            <Image
+                aria-hidden
+                src="/effects/bg-word.webp"
+                alt="wordplay4lyfe graffiti background"
+                containerCss={{
+                    position: "absolute",
+                    top: "5%",
+                    translate: "-10%",
+                    "@xs": {
+                        top: "-10%",
+                        left: "-10%",
+                        translate: 0,
+                    },
+                }}
+                css={{
+                    objectFit: "fill",
+                    height: "300px",
+                    "@xs": {
+                        objectFit: "contain",
+                        maxHeight: "300px",
+                    },
+                    "@md": {
+                        height: "400px",
+                        maxHeight: "400px",
+                    },
+                }}
+            />
+
+            <Image
+                aria-hidden
+                src="/effects/bg-play.webp"
+                alt="wordplay4lyfe graffiti background"
+                containerCss={{
+                    position: "absolute",
+                    bottom: "5%",
+                    translate: "10%",
+                    "@xs": {
+                        bottom: "-10%",
+                        right: "-10%",
+                        translate: 0,
+                    },
+                }}
+                css={{
+                    objectFit: "fill",
+                    height: "300px",
+                    "@xs": {
+                        objectFit: "contain",
+                        maxHeight: "300px",
+                    },
+                    "@md": {
+                        height: "400px",
+                        maxHeight: "400px",
+                    },
+                }}
+            />
+        </Col>
     )
 }
 
