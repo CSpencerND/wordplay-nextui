@@ -5,7 +5,7 @@ import type { PageLinkData } from "types"
 /** components */
 import Head from "next/head"
 import NextLink from "next/link"
-import { Container, Card, Grid, Row, Text } from "@nextui-org/react"
+import { Container, Card, Grid, Row, Text, Col } from "@nextui-org/react"
 
 /** utils */
 import { useRouter } from "next/router"
@@ -20,19 +20,34 @@ const CollectionsDirectory: NextPage = () => {
         <>
             <Head>
                 <title>WP4L | {title}</title>
-                <meta name="description" content="" />
+                <meta name="description" content={title} />
                 <meta name="viewport" content="minimum-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
             <Container as="main" lg css={{ my: "$xl" }}>
                 <Row justify="center">
-                    <Text h2>{title}</Text>
+                    <Text
+                        h2
+                        css={{
+                            color: "$cyan700",
+                        }}
+                    >
+                        {title}
+                    </Text>
                 </Row>
                 <ProductGrid />
             </Container>
         </>
     )
+}
+
+const pathData: { [x: string]: string } = {
+    "staff-picks": "Staff Picks",
+    "summer-22": "Summer '22",
+    mindset: "Mindset",
+    lifestyle: "Lifestyle",
+    creativity: "Creativity",
 }
 
 export default CollectionsDirectory
@@ -52,7 +67,7 @@ const ProductGrid = () => {
                         width: "fit-content",
                     }}
                 >
-                    <Card isPressable>
+                    <Card variant="flat" isPressable css={{bgBlur: "$backgroundContrastAlpha"}}>
                         <NextLink href={pathName}>
                             <Card.Body as="figure" css={{ p: 0 }}>
                                 <Card.Image
@@ -65,7 +80,7 @@ const ProductGrid = () => {
                                 />
                             </Card.Body>
                             <Card.Footer
-                            // isBlurred
+                            isBlurred
                             // css={{
                             //     position: "absolute",
                             //     bottom: 0,
@@ -73,9 +88,22 @@ const ProductGrid = () => {
                             //     bgBlur: "$backgroundAlpha",
                             // }}
                             >
-                                <Row wrap="wrap" justify="center" align="center">
-                                    <Text b>{title}</Text>
-                                </Row>
+                                <Col>
+                                    <Row>
+                                        <Text
+                                            b
+                                            css={{
+                                                // whiteSpace: "nowrap"
+                                                textOverflow: "ellipsis",
+                                            }}
+                                        >
+                                            {title}
+                                        </Text>
+                                    </Row>
+                                    <Row>
+                                        <Swatch />
+                                    </Row>
+                                </Col>
                             </Card.Footer>
                         </NextLink>
                     </Card>
@@ -83,14 +111,6 @@ const ProductGrid = () => {
             ))}
         </Grid.Container>
     )
-}
-
-const pathData: { [x: string]: string } = {
-    "staff-picks": "Staff Picks",
-    "summer-22": "Summer '22",
-    mindset: "Mindset",
-    lifestyle: "Lifestyle",
-    creativity: "Creativity",
 }
 
 interface CollectionLinkData extends PageLinkData {
@@ -124,3 +144,11 @@ const collectionLinks: CollectionLinkData[] = [
         image: "/assets/collections/mindset/say-less-[black].webp",
     },
 ]
+
+/*********************************************************************************************/
+
+const Swatch = () => {
+    return ( 
+        <Text b>Swatch</Text> 
+    )
+}

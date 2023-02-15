@@ -71,20 +71,20 @@ export default function Header({ LayoutRef }: HeaderProps) {
                     ))}
                 </Navbar.Collapse>
             </Navbar>
-            <Image
-                src="/effects/gradient-right-dark.webp"
-                alt="gradient violet background"
-                aria-hidden
-                css={{
-                    position: "fixed",
-                    height: "fit-content",
-                    top: 0,
-                    right: 0,
-                    translate: "45% -45%",
-                    filter: "blur(16px) saturate(1.8))",
-                    opacity: 0.6,
-                }}
-            />
+            {/* <Image */}
+            {/*     src="/effects/gradient-right-dark.webp" */}
+            {/*     alt="gradient violet background" */}
+            {/*     aria-hidden */}
+            {/*     css={{ */}
+            {/*         position: "fixed", */}
+            {/*         height: "fit-content", */}
+            {/*         top: 0, */}
+            {/*         right: 0, */}
+            {/*         translate: "45% -45%", */}
+            {/*         filter: "blur(16px) saturate(1.8))", */}
+            {/*         opacity: 0.6, */}
+            {/*     }} */}
+            {/* /> */}
         </>
     )
 }

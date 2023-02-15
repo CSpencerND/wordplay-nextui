@@ -104,7 +104,7 @@ const Hero = (): JSX.Element => {
 const About = (): JSX.Element => {
     return (
         // <Card css={{ p: "$md", bgBlur: "$backgroundContrastAlpha", position: "relative" }}>
-        <Card css={{ p: "$md", position: "relative" }}>
+        <Card css={{ p: "$md", position: "relative", bgBlur: "$backgroundContrastAlpha" }}>
             <Card.Body as="article">
                 <Text h3>Why we love what we do</Text>
                 <Spacer y={0.5}></Spacer>

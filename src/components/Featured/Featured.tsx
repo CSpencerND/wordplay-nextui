@@ -13,12 +13,12 @@ export default function Featured() {
     const sliderRef = useRef<AliceCarousel>(null)
 
     return (
-        // <Card css={{ py: "$md", bgBlur: "$backgroundContrastAlpha" }}>
-        <Card css={{ py: "$md" }}>
+        <Card css={{ py: "$md", bgBlur: "$backgroundContrastAlpha" }}>
+        {/* <Card css={{ py: "$md" }}> */}
             <Text
                 h3
                 css={{
-                    textGradient: "45deg, $purple600 25%, $pink600 100%",
+                    color: "$cyan700",
                     textAlign: "center",
                     py: "$sm",
                 }}

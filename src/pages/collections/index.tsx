@@ -14,14 +14,21 @@ const CollectionsDirectory: NextPage = () => {
         <>
             <Head>
                 <title>WP4L | Collections</title>
-                <meta name="description" content="" />
+                <meta name="description" content="Collections Directory" />
                 <meta name="viewport" content="minimum-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
             <Container as="main" lg css={{ my: "$xl" }}>
                 <Row justify="center">
-                    <Text h2>Collections</Text>
+                    <Text
+                        h2
+                        css={{
+                            color: "$cyan700",
+                        }}
+                    >
+                        Collections
+                    </Text>
                 </Row>
                 <CollectionGrid />
             </Container>
@@ -46,7 +53,7 @@ const CollectionGrid = () => {
                         width: "fit-content",
                     }}
                 >
-                    <Card isPressable>
+                    <Card isPressable css={{bgBlur: "$backgroundContrastAlpha"}}>
                         <NextLink href={pathName}>
                             <Card.Body as="figure" css={{ p: 0 }}>
                                 <Card.Image
@@ -59,7 +66,7 @@ const CollectionGrid = () => {
                                 />
                             </Card.Body>
                             <Card.Footer
-                            // isBlurred
+                            isBlurred
                             // css={{
                             //     position: "absolute",
                             //     bottom: 0,

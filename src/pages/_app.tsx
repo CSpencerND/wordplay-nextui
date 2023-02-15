@@ -4,13 +4,12 @@ import Layout from "@/components/Layout"
 
 import "@/styles/globals.css"
 const globalCSS = globalCss({
-    // body: {
-    // bgBlur: "hsla(240,12%,8%,0.6)",
-    // bgBlur: "hsla(240,12%,8%,0.6)",
-    // bgBlur: "hsla(240,16%,8%,0.6)",
-    //     backgroundImage:
-    //         "linear-gradient(to top, hsl(240, 18%, 8%) 25%, hsl(240, 18%, 15%) 100%)",
-    // },
+    body: {
+        backgroundImage: "url('/effects/blob-scene-haikei.webp')",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+    },
 
     "li.alice-carousel__stage-item": {
         px: "0.5rem",
@@ -34,15 +33,10 @@ const theme = createTheme({
     type: "dark",
     theme: {
         colors: {
-            // background:
-            //     "linear-gradient(to top, hsl(240, 18%, 8%) 25%, hsl(240, 18%, 15%) 100%)",
-            // backgroundAlpha:            "hsla(240,16%,8%,0.6)",
-            // backgroundAlpha:
-            //     "linear-gradient(to top, hsla(240, 18%, 8%, 0.6) 25%, hsla(240, 18%, 15%) 100%, 0.6)",
-            // backgroundContrast: "hsla(240,16%,12%,1)",
-            // backgroundContrast: "hsla(240, 18%, 20%, 1)",
-            // backgroundContrastAlpha:    "hsla(240,12%,12%,0.3)",
-            // backgroundContrastAlpha: "hsla(240,12%,16%,0.8)",
+            background: "hsl(219, 18%, 8%)",
+            backgroundAlpha: "hsla(219,18%,8%,0.6)",
+            backgroundContrast: "hsla(219, 18%, 16%, 1)",
+            backgroundContrastAlpha: "hsla(219,18%,16%,0.8)",
             grayscale: "linear-gradient(to top, hsla(240,16%,25%,0.6), hsla(240,16%,100%,0.6))",
             primaryLight: "var(--nextui-colors-purple50)",
             primaryLightHover: "var(--nextui-colors-purple100)",
