@@ -1,4 +1,5 @@
-import React, { useRef } from "react"
+/** react hooks */
+import { useEffect, useRef, useState } from "react"
 
 /** components */
 import { Button, Card, Image, Text } from "@nextui-org/react"
@@ -12,9 +13,14 @@ import temp from "@/assets/collections/mindset/say-less-[black].webp"
 export default function Featured() {
     const sliderRef = useRef<AliceCarousel>(null)
 
+    const [infinite, setInfinite] = useState<boolean>(false)
+    useEffect(() => {
+        setInfinite(true)
+    }, [])
+
     return (
         <Card css={{ py: "$md", bgBlur: "$backgroundContrastAlpha" }}>
-        {/* <Card css={{ py: "$md" }}> */}
+            {/* <Card css={{ py: "$md" }}> */}
             <Text
                 h3
                 css={{
@@ -25,10 +31,11 @@ export default function Featured() {
             >
                 Featured Items
             </Text>
+
             <AliceCarousel
                 ref={sliderRef}
                 items={images}
-                infinite
+                infinite={infinite}
                 keyboardNavigation
                 disableDotsControls
                 mouseTracking
