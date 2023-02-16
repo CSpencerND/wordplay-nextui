@@ -80,7 +80,7 @@ const ProductGrid = () => {
                                 />
                             </Card.Body>
                             <Card.Footer
-                            isBlurred
+                            // isBlurred
                             // css={{
                             //     position: "absolute",
                             //     bottom: 0,

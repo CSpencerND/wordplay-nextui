@@ -66,13 +66,6 @@ const CollectionGrid = () => {
                                 />
                             </Card.Body>
                             <Card.Footer
-                            isBlurred
-                            // css={{
-                            //     position: "absolute",
-                            //     bottom: 0,
-                            //     zIndex: 1,
-                            //     bgBlur: "$backgroundAlpha",
-                            // }}
                             >
                                 <Row wrap="wrap" justify="center" align="center">
                                     <Text b>{title}</Text>
