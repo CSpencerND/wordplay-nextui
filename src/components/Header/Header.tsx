@@ -52,8 +52,8 @@ export default function Header({ LayoutRef }: HeaderProps) {
                     </Navbar.Brand>
                 </Navbar.Content>
                 <Navbar.Content css={{ paddingRight: "$6" }} gap={"$xs"}>
-                    <Button icon={<Buy set="broken" />} light auto />
-                    <Button icon={<Login set="broken" />} light auto />
+                    <Button icon={<Buy set="curved" />} light auto />
+                    <Button icon={<Login set="curved" />} light auto />
                 </Navbar.Content>
                 <Navbar.Collapse css={{ transition: "all 150ms" }}>
                     {collapseItems.map(({ title, pathName }, i) => (
