@@ -19,7 +19,7 @@ const CollectionsDirectory: NextPage = () => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <Container as="main" lg css={{ my: "$xl" }}>
+            <Container as="main" lg gap={1} css={{ my: "$xl" }}>
                 <Row justify="center">
                     <Text
                         h2
@@ -42,7 +42,7 @@ export default CollectionsDirectory
 
 const CollectionGrid = () => {
     return (
-        <Grid.Container as="ul" gap={2}>
+        <Grid.Container as="ul" gap={1}>
             {collectionLinks.map(({ title, pathName, image }: CollectionLinkData, i) => (
                 <Grid
                     as="li"

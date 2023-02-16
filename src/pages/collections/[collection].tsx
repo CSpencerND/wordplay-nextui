@@ -1,14 +1,14 @@
 /** types */
 import type { NextPage } from "next"
-import type { PageLinkData } from "types"
+import type { Children, PageLinkData } from "types"
 
 /** components */
 import Head from "next/head"
-import NextLink from "next/link"
-import { Container, Card, Grid, Row, Text, Col } from "@nextui-org/react"
+import { Container, Card, Grid, Row, Text, Col, Radio, styled } from "@nextui-org/react"
 
 /** utils */
 import { useRouter } from "next/router"
+import { useEffect } from "react"
 
 /**********************************************************************************************/
 
@@ -25,7 +25,7 @@ const CollectionsDirectory: NextPage = () => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <Container as="main" lg css={{ my: "$xl" }}>
+            <Container as="main" lg gap={1} css={{ my: "$xl" }}>
                 <Row justify="center">
                     <Text
                         h2
@@ -56,7 +56,7 @@ export default CollectionsDirectory
 
 const ProductGrid = () => {
     return (
-        <Grid.Container as="ul" gap={2}>
+        <Grid.Container as="ul" gap={1}>
             {collectionLinks.map(({ title, pathName, image }, i) => (
                 <Grid
                     as="li"
@@ -67,9 +67,15 @@ const ProductGrid = () => {
                         width: "fit-content",
                     }}
                 >
-                    <Card variant="flat" isPressable css={{bgBlur: "$backgroundContrastAlpha"}}>
-                        <NextLink href={pathName}>
-                            <Card.Body as="figure" css={{ p: 0 }}>
+                    <Card variant="shadow" css={{ bgBlur: "$backgroundContrastAlpha" }}>
+                        {/** TODO: Wrap this in modal label*/}
+                        <Card.Body as="figure" css={{ p: 0 }}>
+                            <div
+                                style={{
+                                    cursor: "pointer",
+                                    position: "relative",
+                                }}
+                            >
                                 <Card.Image
                                     src={image}
                                     alt={title}
@@ -78,34 +84,25 @@ const ProductGrid = () => {
                                         backgroundImage: "$grayscale",
                                     }}
                                 />
-                            </Card.Body>
-                            <Card.Footer
-                            // isBlurred
-                            // css={{
-                            //     position: "absolute",
-                            //     bottom: 0,
-                            //     zIndex: 1,
-                            //     bgBlur: "$backgroundAlpha",
-                            // }}
-                            >
-                                <Col>
-                                    <Row>
-                                        <Text
-                                            b
-                                            css={{
-                                                // whiteSpace: "nowrap"
-                                                textOverflow: "ellipsis",
-                                            }}
-                                        >
-                                            {title}
-                                        </Text>
-                                    </Row>
-                                    <Row>
-                                        <Swatch />
-                                    </Row>
-                                </Col>
-                            </Card.Footer>
-                        </NextLink>
+                                <Card.Footer
+                                    isBlurred
+                                    css={{
+                                        textOverflow: "ellipsis",
+                                        position: "absolute",
+                                        bgBlur: "hsla(240,16%,16%,0.1)",
+                                        bottom: 0,
+                                        zIndex: 1,
+                                        py: 0,
+                                        borderRadius: 0,
+                                    }}
+                                >
+                                    <Text b>{title}</Text>
+                                </Card.Footer>
+                            </div>
+                        </Card.Body>
+                        <Card.Footer>
+                            <Swatch />
+                        </Card.Footer>
                     </Card>
                 </Grid>
             ))}
@@ -147,8 +144,65 @@ const collectionLinks: CollectionLinkData[] = [
 
 /*********************************************************************************************/
 
+// const Swatch = ({ children }: Children) => {
+// const Swatch = () => {
+//     return (
+//         <Swatch.Container>
+//             <Swatch.Label className="swatch__wrapper" htmlFor="myRadio1">
+//                 <Swatch.Input
+//                     className="swatch__input"
+//                     type="radio"
+//                     value="option1"
+//                     name="myRadio"
+//                     id="myRadio1"
+//                     onChange={() => console.log(1)}
+//                 />
+//                 <Swatch.Icon className="swatch__icon">1</Swatch.Icon>
+//             </Swatch.Label>
+
+//             <Swatch.Label className="swatch__wrapper" htmlFor="myRadio2">
+//                 <Swatch.Input
+//                     className="swatch__input"
+//                     type="radio"
+//                     value="option1"
+//                     name="myRadio"
+//                     id="myRadio2"
+//                     onChange={() => console.log(2)}
+//                 />
+//                 <Swatch.Icon className="swatch__icon">2</Swatch.Icon>
+//             </Swatch.Label>
+
+//             <Swatch.Label className="swatch__wrapper" htmlFor="myRadio3">
+//                 <Swatch.Input
+//                     className="swatch__input"
+//                     type="radio"
+//                     value="option1"
+//                     name="myRadio"
+//                     id="myRadio3"
+//                     onChange={() => console.log(3)}
+//                 />
+//                 <Swatch.Icon className="swatch__icon">3</Swatch.Icon>
+//             </Swatch.Label>
+//         </Swatch.Container>
+//     )
+// }
+
+// Swatch.Container = styled("div", {display: "flex", gap: "0.5rem"})
+// Swatch.Label = styled("label", {})
+// Swatch.Input = styled("input", {display: "none"})
+// Swatch.Icon = styled("span", {bgColor: "$primary", border: "1px solid $gray800"})
+
 const Swatch = () => {
-    return ( 
-        <Text b>Swatch</Text> 
+    return (
+        <Radio.Group
+            defaultValue="primary"
+            orientation="horizontal"
+            css={{ "& *": { margin: 0 } }}
+        >
+            <Radio value="primary" color="primary" labelColor="primary" isSquared></Radio>
+            <Radio value="secondary" color="secondary" labelColor="secondary" isSquared></Radio>
+            <Radio value="success" color="success" labelColor="success" isSquared></Radio>
+            <Radio value="warning" color="warning" labelColor="warning" isSquared></Radio>
+        </Radio.Group>
     )
 }
